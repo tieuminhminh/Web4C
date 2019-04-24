@@ -1,4 +1,4 @@
-$_DOMAIN = 'http://localhost/newspage/admin/';
+$_DOMAIN = 'http://localhost/blogWebsite/admin/';
 
 // Đăng nhập
 $('#formSignin button').on('click', function() {
@@ -20,8 +20,8 @@ $('#formSignin button').on('click', function() {
 	else
 	{
 		$.ajax({
-			url : $_DOMAIN + 'signin.php',
 			type : 'POST',
+			url : $_DOMAIN + 'signin.php',
 			data : {
 				user_signin : $user_signin,
 				pass_signin : $pass_signin

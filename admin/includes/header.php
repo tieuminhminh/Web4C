@@ -35,7 +35,7 @@
 			<nav class="navbar navbar-default" role="navigation">
 		  		<div class="container-fluid">
 		    		<div class="navbar-header">
-		      			<a class="navbar-brand" href="' . $_DOMAIN . '">Newspage Administration</a>
+		      			<a class="navbar-brand" href="' . $_DOMAIN . '">blogWebsite	 Administration</a>
 		    		</div><!-- div.navbar-header -->
 				</div><!-- div.container-fluid -->
 			</nav>

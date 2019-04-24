@@ -98,7 +98,7 @@ if (isset($_GET['sp']) && isset($_GET['id'])) {
 			      		<li data-toggle="modal" data-target="#boxSearch"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 			      	</ul>
 					<ul class="nav navbar-nav navbar-right">
-			      		<li ><a href="http://localhost/newspage/admin/">Sign In</a></li>
+			      		<li ><a href="http://localhost/blogWebsite/admin/">Sign In</a></li>
 			      	</ul>
 			    </div>
 		  	</div>

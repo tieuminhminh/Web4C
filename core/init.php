@@ -10,7 +10,7 @@ $db = new DB();
 $db->connect();
 $db->set_char('utf8');
 
-$_DOMAIN = 'http://localhost/newspage/';
+$_DOMAIN = 'http://localhost/blogWebsite/';
 // Lấy thông tin website
 $sql_get_data_web = "SELECT * FROM website";
 if ($db->num_rows($sql_get_data_web)) {
