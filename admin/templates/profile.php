@@ -16,22 +16,22 @@ if ($user)
 	// Form Upload ảnh đại diện
 	echo 
 	'
-		<h3>Hồ sơ cá nhân</h3>
+		<h3>Profile</h3>
 		<div class="panel panel-default">
-			<div class="panel-heading">Upload ảnh đại diện</div>
+			<div class="panel-heading">Upload avata</div>
 			<div class="panel-body">
 				<form action="' . $_DOMAIN . 'profile.php" method="POST" onsubmit="return false;" id="formUpAvt" enctype="multipart/form-data">
 					<div class="form-group box-current-img">
                         <p><strong>Ảnh hiện tại</strong></p>
-                        <img src="' . $data_user['url_avatar'] . '" alt="Ảnh đại diện của ' . $data_user['display_name'] . '" width="80" height="80">
+                        <img src="' . $data_user['url_avatar'] . '" alt="avata of ' . $data_user['display_name'] . '" width="80" height="80">
                     </div>
-					<div class="alert alert-info">Vui lòng chọn file ảnh có đuôi .jpg, .png, .gif và có dung lượng dưới 5MB.</div>
+					<div class="alert alert-info">Choose .jpg, .png, .gif file and small than 5MB.</div>
 					<div class="form-group">
-						<label>Chọn hình ảnh</label>
+						<label>Choose</label>
 						<input type="file" class="form-control" id="img_avt" name="img_avt" onchange="preUpAvt();">
 					</div>
 					<div class="form-group box-pre-img hidden">
-                        <p><strong>Ảnh xem trước</strong></p>
+                        <p><strong>Image Demo</strong></p>
                     </div>            
                     <div class="form-group hidden box-progress-bar">
                         <div class="progress">
@@ -40,7 +40,7 @@ if ($user)
                     </div>
 					<div class="form-group">
 						<button class="btn btn-primary pull-left" type="submit">Upload</button>
-						<a class="btn btn-danger pull-right" id="del_avt"><span class="glyphicon glyphicon-trash"></span> Xoá</a>
+						<a class="btn btn-danger pull-right" id="del_avt"><span class="glyphicon glyphicon-trash"></span> Delete</a>
 					</div>
 					<div class="clearfix"></div><br>
 					<div class="alert alert-danger hidden"></div>
@@ -53,11 +53,11 @@ if ($user)
 	echo 
 	'
 		<div class="panel panel-default">
-			<div class="panel-heading">Cập nhật thông tin</div>
+			<div class="panel-heading">Edit Profile</div>
 			<div class="panel-body">
 				<form method="POST" onsubmit="return false;" id="formUpdateInfo">
 					<div class="form-group">
-						<label>Tên hiển thị *</label>
+						<label>Name *</label>
 						<input type="text" class="form-control" id="dn_update" value="' . $data_user['display_name'] . '">
 					</div>
 					<div class="form-group">
@@ -65,34 +65,14 @@ if ($user)
 						<input type="text" class="form-control" id="email_update" value="' . $data_user['email'] . '">
 					</div>
 					<div class="form-group">
-						<label>URL Facebook</label>
-						<input type="text" class="form-control" id="fb_update" value="' . $data_user['facebook'] . '">
-					</div>
-					<div class="form-group">
-						<label>URL Google</label>
-						<input type="text" class="form-control" id="gg_update" value="' . $data_user['google'] . '">
-					</div>
-					<div class="form-group">
-						<label>URL Twitter</label>
-						<input type="text" class="form-control" id="tt_update" value="' . $data_user['twitter'] . '">
-					</div>
-					<div class="form-group">
-						<label>Số điện thoại</label>
-						<input type="text" class="form-control" id="phone_update" value="' . $data_user['phone'] . '">
-					</div>
-					<div class="form-group">
-						<label>Giới thiệu</label>
-						<textarea id="desc_update" class="form-control">' . $data_user['description'] . '</textarea>
-					</div>
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+						<button type="submit" class="btn btn-primary">Save</button>
 					</div>
 					<div class="alert alert-danger hidden"></div>
 				</form>
 			</div>
 		</div>
 	';	
-
+/** 
 	// Form đổi mật khẩu
 	echo 
 	'
@@ -119,7 +99,8 @@ if ($user)
 				</form>
 			</div>
 		</div>
-	';	
+	';
+	*/	
 }
 // Ngược lại chưa đăng nhập
 else

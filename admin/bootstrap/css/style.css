@@ -1,0 +1,12 @@
+.container-fluid  {
+  margin-top: 10px;
+}
+
+hr  {
+  margin-bottom: 10px;
+}
+
+footer:nth-child(2)  {
+  text-align: center;
+  padding-bottom: 10px;
+}

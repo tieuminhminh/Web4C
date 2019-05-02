@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<h3>Tìm kiếm</h3>
+		<h3>Search</h3>
 		<?php
 
 		// Lấy tham số từ khóa tìm kiếm
@@ -95,10 +95,10 @@
 					</div>
 		      	';
 		    } else {
-		    	echo '<div class="well well-lg">Không tìm thấy kết quả nào.</div>';
+		    	echo '<div class="well well-lg">No result .</div>';
 		    }
 		} else {
-			echo '<div class="alert alert-danger">Vui lòng nhập từ khóa tìm kiếm.</div>';
+			echo '<div class="alert alert-danger">Input your search.</div>';
 		}
 
 		?>

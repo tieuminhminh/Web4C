@@ -6,7 +6,7 @@ if ($user)
 	// Nếu tài khoản là tác giả
 	if ($data_user['position'] == 0)
 	{
-		echo '<div class="alert alert-danger">Bạn không có đủ quyền để vào trang này.</div>';
+		echo '<div class="alert alert-danger"> You do not have permission.</div>';
 	}
 	// Ngược lại tài khoản là admin
 	else if ($data_user['position'] == 1)
@@ -42,7 +42,7 @@ if ($user)
 				echo 
 				'
 					<a href="' . $_DOMAIN . 'categories" class="btn btn-default">
-						<span class="glyphicon glyphicon-arrow-left"></span> Trở về
+						<span class="glyphicon glyphicon-arrow-left"></span> Back
 					</a> 
 				';
 
@@ -52,42 +52,42 @@ if ($user)
 					<p class="form-add-cate">
 						<form method="POST" id="formAddCate" onsubmit="return false;">
 							<div class="form-group">
-								<label>Tên chuyên mục</label>
+								<label>Category name</label>
 								<input type="text" class="form-control title" id="label_add_cate">
 							</div>
 							<div class="form-group">
-								<label>URL chuyên mục</label>
-								<input type="text" class="form-control slug" placeholder="Nhấp vào để tự tạo" id="url_add_cate">
+								<label>Category URL</label>
+								<input type="text" class="form-control slug" placeholder="Click here" id="url_add_cate">
 							</div>
 							<div class="form-group">
-								<label>Loại chuyên mục</label>
+								<label>Category side</label>
 								<div class="radio">
 				  					<label>
-				    					<input type="radio" name="type_add_cate" value="1" checked class="type-add-cate-1"> Lớn
+				    					<input type="radio" name="type_add_cate" value="1" checked class="type-add-cate-1"> Large
 				  					</label>
 								</div>
 								<div class="radio">
 				  					<label>
-				    					<input type="radio" name="type_add_cate" value="2" class="type-add-cate-2"> Vừa
+				    					<input type="radio" name="type_add_cate" value="2" class="type-add-cate-2"> Medium
 				  					</label>
 								</div>
 								<div class="radio">
 				  					<label>
-				    					<input type="radio" name="type_add_cate" value="3" class="type-add-cate-3"> Nhỏ
+				    					<input type="radio" name="type_add_cate" value="3" class="type-add-cate-3"> Small
 				  					</label>
 								</div>
 							</div>
 							<div class="form-group hidden parent-add-cate">
-								<label>Parent chuyên mục</label>
+								<label>Parent category</label>
 								<select id="parent_add_cate" class="form-control">
 								</select>
 							</div>
 							<div class="form-group">
-								<label>Sort chuyên mục</label>
+								<label>Sort category</label>
 								<input type="text" class="form-control" id="sort_add_cate">
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary">Tạo</button>
+								<button type="submit" class="btn btn-primary">create</button>
 							</div>
 							<div class="alert alert-danger hidden"></div>
 						</form>
@@ -105,10 +105,10 @@ if ($user)
 					echo 
 					'
 						<a href="' . $_DOMAIN . 'categories" class="btn btn-default">
-							<span class="glyphicon glyphicon-arrow-left"></span> Trở về
+							<span class="glyphicon glyphicon-arrow-left"></span> Back
 						</a> 
 						<a class="btn btn-danger" id="del_cate" data-id="' . $id . '">
-							<span class="glyphicon glyphicon-trash"></span> Xoá
+							<span class="glyphicon glyphicon-trash"></span> Delete
 						</a> 
 					';	
 
@@ -130,7 +130,7 @@ if ($user)
 					                $parent_edit_cate .= 
 							'
 								<div class="form-group parent-edit-cate hidden">
-									<label>Parent chuyên mục</label>
+									<label>Parent category</label>
 									<select id="parent_edit_cate" class="form-control">
 									</select>
 								</div>
@@ -142,7 +142,7 @@ if ($user)
 							$parent_edit_cate .= 
 							'
 								<div class="form-group parent-edit-cate">
-									<label>Parent chuyên mục</label>
+									<label>Parent category</label>
 									<select id="parent_edit_cate" class="form-control">
 							';
 
@@ -164,7 +164,7 @@ if ($user)
 							}
 							else
 							{
-								echo '<option value="0">Hiện chưa có chuyên mục cha nào</option>';
+								echo '<option value="0">No parent category</option>';
 							}
 
 							$parent_edit_cate .= 
@@ -179,7 +179,7 @@ if ($user)
 							$parent_edit_cate .= 
 							'
 								<div class="form-group parent-edit-cate">
-									<label>Parent chuyên mục</label>
+									<label>Parent category</label>
 									<select id="parent_edit_cate" class="form-control">
 							';
 												
@@ -201,7 +201,7 @@ if ($user)
 							}
 							else
 							{
-								echo '<option value="0">Hiện chưa có chuyên mục cha nào</option>';
+								echo '<option value="0">No parent category</option>';
 							}
 
 							$parent_edit_cate .= 
@@ -215,15 +215,15 @@ if ($user)
 						'	<p class="form-edit-cate">
 								<form method="POST" id="formEditCate" data-id="' . $data_cate['id_cate'] . '" onsubmit="return false;" class="form-cate">
 									<div class="form-group">
-										<label>Tên chuyên mục</label>
+										<label>Category name</label>
 										<input type="text" class="form-control title" value="' . $data_cate['label'] . '" id="label_edit_cate">
 									</div>
 									<div class="form-group">
-										<label>URL chuyên mục</label>
+										<label>Category URl</label>
 										<input type="text" class="form-control slug" value="' . $data_cate['url'] . '" id="url_edit_cate">
 									</div>
 									<div class="form-group">
-										<label>Loại chuyên mục</label>
+										<label>Category side</label>
 										<div class="radio">
 									  		<label>
 									    		<input type="radio" name="type_edit_cate" value="1" class="type-edit-cate-1" ' . $checked_type_1 . '> Lớn
@@ -242,11 +242,11 @@ if ($user)
 									</div>
 					                                ' . $parent_edit_cate . '
 									<div class="form-group">
-										<label>Sort chuyên mục</label>
+										<label>Sort category</label>
 										<input type="text" class="form-control" value="' . $data_cate['sort'] . '" id="sort_edit_cate">
 									</div>
 					                <div class="form-group">
-									    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+									    <button type="submit" class="btn btn-primary">Save change</button>
 					                </div>
 					                <div class="alert alert-danger hidden"></div>
 								</form>
@@ -259,7 +259,7 @@ if ($user)
 					// Hiển thị thông báo lỗi
 					echo 
 					'
-						<div class="alert alert-danger">ID chuyên mục đã bị xoá hoặc không tồn tại.</div>
+						<div class="alert alert-danger">ID has been deleted or not exist.</div>
 					';
 				}
 			}
@@ -272,13 +272,13 @@ if ($user)
 			echo 
 			'
 				<a href="' . $_DOMAIN . 'categories/add" class="btn btn-default">
-					<span class="glyphicon glyphicon-plus"></span> Thêm
+					<span class="glyphicon glyphicon-plus"></span> Add
 				</a> 
 				<a href="' . $_DOMAIN . 'categories" class="btn btn-default">
 					<span class="glyphicon glyphicon-repeat"></span> Reload
 				</a> 
 				<a class="btn btn-danger" id="del_cate_list">
-					<span class="glyphicon glyphicon-trash"></span> Xoá
+					<span class="glyphicon glyphicon-trash"></span> Delete
 				</a> 
 			';
 
@@ -295,9 +295,9 @@ if ($user)
 						  	<tr>
 								<td><input type="checkbox"></td>
 								<td><strong>ID</strong></td>
-								<td><strong>Tên chuyên mục</strong></td>
-								<td><strong>Loại</strong></td>
-								<td><strong>Chuyên mục cha</strong></td>
+								<td><strong>Category name</strong></td>
+								<td><strong>Side</strong></td>
+								<td><strong>Parent category</strong></td>
 								<td><strong>Sort</strong></td>
 								<td><strong>Tools</strong></td>
 						  	</tr>
@@ -314,19 +314,19 @@ if ($user)
 
 					    if ($data_cate_parent['type'] == '1' && $data_cate['type'] == '3')
 					    {
-					   		$label_cate_parent = '<p class="text-danger">Lỗi</p>';
+					   		$label_cate_parent = '<p class="text-danger">Error</p>';
 					    }
 					    else if ($data_cate_parent['type'] == '3' && $data_cate['type'] == '2') 
 					    {
-					    	$label_cate_parent = '<p class="text-danger">Lỗi</p>';
+					    	$label_cate_parent = '<p class="text-danger">Error</p>';
 					    }
 					    else if ($data_cate_parent['type'] == '3' && $data_cate['type'] == '1') 
 					    {
-					    	$label_cate_parent = '<p class="text-danger">Lỗi</p>';
+					    	$label_cate_parent = '<p class="text-danger">Error</p>';
 					    }
 					    else if ($data_cate_parent['type'] == $data_cate['type']) 
 					    {
-					    	$label_cate_parent = '<p class="text-danger">Lỗi</p>';
+					    	$label_cate_parent = '<p class="text-danger">Error</p>';
 					    }
 					    else
 					    {
@@ -341,15 +341,15 @@ if ($user)
 					// Hiển thị loại chuyên mục
 					if ($data_cate['type'] == 1)
 					{
-						$data_cate['type'] = 'Lớn';
+						$data_cate['type'] = 'Large';
 					}
 					else if ($data_cate['type'] == 2)
 					{
-						$data_cate['type'] = 'Vừa';
+						$data_cate['type'] = 'Medium';
 					}
 					else if ($data_cate['type'] == 3)
 					{
-						$data_cate['type'] = 'Nhỏ';
+						$data_cate['type'] = 'Small';
 					}
 
 					echo 
@@ -382,7 +382,7 @@ if ($user)
 			// Nếu không có chuyên mục
 			else
 			{
-				echo '<br><br><div class="alert alert-info">Chưa có chuyên mục nào.</div>';
+				echo '<br><br><div class="alert alert-info">No categorys.</div>';
 			}
 		}
 	}

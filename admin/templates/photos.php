@@ -4,7 +4,7 @@
 if ($user)
 {
   
-    echo '<h3>Hình ảnh</h3>';
+    echo '<h3>Image</h3>';
     // Lấy tham số ac
     if (isset($_GET['ac']))
     {
@@ -34,14 +34,14 @@ if ($user)
             echo 
             '
                 <p class="form-up-img">
-                    <div class="alert alert-info">Mỗi lần upload tối đa 20 file ảnh. Mỗi file có dung lượng không vượt quá 5MB và có đuôi định dạng là .jpg, .png, .gif.</div>
+                    <div class="alert alert-info">Maximum update is 20 images.Each Image is small than 50MB.</div>
                     <form action="' . $_DOMAIN . 'photos.php"method="POST" id="formUpImg" enctype="multipart/form-data" onsubmit="return false;">
                         <div class="form-group">
-                            <label>Chọn hình ảnh</label>
+                            <label>Choose</label>
                             <input type="file" class="form-control" accept="" name="img_up[]" multiple="true" id="img_up" onchange="preUpImg();">
                         </div>
                         <div class="form-group box-pre-img hidden">
-                            <p><strong>Ảnh xem trước</strong></p>
+                            <p><strong>Image demo</strong></p>
                         </div>
                         <div class="form-group hidden box-progress-bar">
                             <div class="progress">
@@ -50,7 +50,7 @@ if ($user)
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Upload</button>
-                            <button class="btn btn-default" type="reset">Chọn lại</button>
+                            <button class="btn btn-default" type="reset">ReChoose</button>
                         </div>
                         <div class="alert alert-danger hidden"></div>
                     </form>
@@ -66,13 +66,13 @@ if ($user)
         echo
         '
             <a href="' . $_DOMAIN . 'photos/add" class="btn btn-default">
-                <span class="glyphicon glyphicon-plus"></span> Thêm
+                <span class="glyphicon glyphicon-plus"></span> Add
             </a> 
             <a href="' . $_DOMAIN . 'photos" class="btn btn-default">
                 <span class="glyphicon glyphicon-repeat"></span> Reload
             </a> 
             <a class="btn btn-danger" id="del_img_list">
-                <span class="glyphicon glyphicon-trash"></span> Xoá
+                <span class="glyphicon glyphicon-trash"></span> Delete
             </a> 
         ';
  
@@ -83,18 +83,18 @@ if ($user)
             echo '
                 <div class="row list" id="list_img">
                     <div class="col-md-12">
-                        <div class="checkbox"><label><input type="checkbox"> Chọn/Bỏ chọn tất cả</label></div>
+                        <div class="checkbox"><label><input type="checkbox"> Check/Uncheck All</label></div>
                     </div>
             ';
             foreach($db->fetch_assoc($sql_get_img, 0) as $key => $data_img) 
             {
                 // Trạng thái ảnh
                 if (file_exists('../'.$data_img['url'])) {
-                    $status_img = '<label class="label label-success">Tồn tại</label>';
+                    $status_img = '<label class="label label-success">Exist</label>';
                 }
                 else
                 {
-                    $status_img = '<label class="label label-danger">Hỏng</label>';
+                    $status_img = '<label class="label label-danger">Error</label>';
                 }
 
                 // Dung lượng ảnh
@@ -126,9 +126,9 @@ if ($user)
                                     </span>
                                 </div>
                                 <br>
-                                <p>Trạng thái: ' . $status_img . '</p>
-                                <p>Dung lượng: ' . $size_img . '</p>
-                                <p>Định dạng: ' . strtoupper($data_img['type']) . '</p>
+                                <p>Status: ' . $status_img . '</p>
+                                <p>Storage: ' . $size_img . '</p>
+                                <p>Fomat: ' . strtoupper($data_img['type']) . '</p>
                             </div>
                         </div>
                     </div>   
@@ -138,7 +138,7 @@ if ($user)
         }   
         else
         {
-            echo '<br><br><div class="alert alert-info">Chưa có hình ảnh nào.</div>';
+            echo '<br><br><div class="alert alert-info">No Image.</div>';
         }   
     }
 }

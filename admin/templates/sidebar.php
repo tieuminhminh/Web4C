@@ -25,12 +25,12 @@
 				    // Nếu tài khoản là admin
 				    if ($data_user['position'] == '1')
 				    {
-				    	echo '<span class="label label-primary">Quản trị viên</span>';
+				    	echo '<span class="label label-primary">Administrator</span>';
 				    }
 				    // Ngược lại tài khoản là tác giả
 				    else
 				    {
-				    	echo '<span class="label label-success">Tác giả</span>';
+				    	echo '<span class="label label-success">Author</span>';
 				    }
 
 				    ?>
@@ -38,16 +38,16 @@
 			</div>
 		</li>
 		<a class="list-group-item active" href="<?php echo $_DOMAIN; ?>">
-			<span class="glyphicon glyphicon-dashboard"></span> Bảng điều khiển
+			<span class="glyphicon glyphicon-dashboard"></span> Dashboard
 		</a>
 		<a class="list-group-item" href="<?php echo $_DOMAIN; ?>profile">
-			<span class="glyphicon glyphicon-user"></span> Hồ sơ cá nhân
+			<span class="glyphicon glyphicon-user"></span> Profile
 		</a>
 		<a class="list-group-item" href="<?php echo $_DOMAIN; ?>posts">
-			<span class="glyphicon glyphicon-edit"></span> Bài viết
+			<span class="glyphicon glyphicon-edit"></span> Posts
 		</a>	
 		<a class="list-group-item" href="<?php echo $_DOMAIN; ?>photos">
-			<span class="glyphicon glyphicon-picture"></span> Hình ảnh
+			<span class="glyphicon glyphicon-picture"></span> Images
 		</a>
 		<?php
 
@@ -58,20 +58,20 @@
 			echo 
 			'
 				<a class="list-group-item" href="' . $_DOMAIN . 'categories">
-					<span class="glyphicon glyphicon-tag"></span> Chuyên mục
+					<span class="glyphicon glyphicon-tag"></span> Category
 				</a>
 				<a class="list-group-item" href="' . $_DOMAIN . 'setting">
-					<span class="glyphicon glyphicon-cog"></span> Cài đặt chung
+					<span class="glyphicon glyphicon-cog"></span> Setting
 				</a>	
 				<a class="list-group-item" href="' . $_DOMAIN . 'accounts">
-					<span class="glyphicon glyphicon-lock"></span> Tài khoản
+					<span class="glyphicon glyphicon-lock"></span> Accounts
 				</a>
 			';
 		}
 
 		?>
 		<a class="list-group-item" href="<?php echo $_DOMAIN; ?>signout.php">
-			<span class="glyphicon glyphicon-off"></span> Thoát
+			<span class="glyphicon glyphicon-off"></span> Signout
 		</a>
 	</ul><!-- ul.list-group -->
 </div><!-- div.sidebar -->

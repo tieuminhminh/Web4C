@@ -42,7 +42,7 @@ if ($db->num_rows($sql_get_data_post)) {
 	</div>
 	<hr>
 	<div class="row">
-		<h3>Bài viết liên quan</h3>
+		<h3>Posts</h3>
 		<?php
 
 		// Hiển thị các bài viết liên quan theo chuyên mục của bài viết chỉ định

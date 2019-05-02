@@ -51,20 +51,20 @@ if ($user)
                     <p class="form-add-acc">
                         <form method="POST" id="formAddAcc" onsubmit="return false;">
                             <div class="form-group">
-                                <label>Tên đăng nhập</label>
+                                <label>User Name</label>
                                 <input type="text" class="form-control title" id="un_add_acc">
                             </div>
                             <div class="form-group">
-                                <label>Mật khẩu</label>
+                                <label>Pass word</label>
                                 <input type="password" class="form-control title" id="pw_add_acc">
                             </div>
-							<p> Mật khẩu từ 6 đến 32 kí tự </p>
+							<p> Password from 6 to 32 characters </p>
                             <div class="form-group">
-                                <label>Nhập lại mật khẩu</label>
+                                <label>Confirm password</label>
                                 <input type="password" class="form-control title" id="repw_add_acc">
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Thêm</button>
+                                <button type="submit" class="btn btn-primary">Create new account</button>
                             </div>
                             <div class="alert alert-danger hidden"></div>
                         </form>
@@ -80,19 +80,19 @@ if ($user)
             echo
             '
                 <a href="' . $_DOMAIN . 'accounts/add" class="btn btn-default">
-                    <span class="glyphicon glyphicon-plus"></span> Thêm
+                    <span class="glyphicon glyphicon-plus"></span> Add
                 </a> 
                 <a href="' . $_DOMAIN . 'accounts" class="btn btn-default">
                     <span class="glyphicon glyphicon-repeat"></span> Reload
                 </a>
                 <a class="btn btn-warning" id="lock_acc_list">
-                    <span class="glyphicon glyphicon-lock"></span> khoá
+                    <span class="glyphicon glyphicon-lock"></span> Lock
                 </a>
                 <a class="btn btn-success" id="unlock_acc_list">
-                    <span class="glyphicon glyphicon-lock"></span> Mở khoá
+                    <span class="glyphicon glyphicon-lock"></span> Unlock
                 </a> 
                 <a class="btn btn-danger" id="del_acc_list">
-                    <span class="glyphicon glyphicon-trash"></span> Xoá
+                    <span class="glyphicon glyphicon-trash"></span> Delete
                 </a> 
             ';
      
@@ -109,8 +109,8 @@ if ($user)
                             <tr>
                                 <td><input type="checkbox"></td>
                                 <td><strong>ID</strong></td>
-                                <td><strong>Tên đăng nhập</strong></td>
-                                <td><strong>Trạng thái</strong></td>
+                                <td><strong>User name</strong></td>
+                                <td><strong>Status</strong></td>
                                 <td><strong>Tools</strong></td>
                             </tr>
                 ';
@@ -120,9 +120,9 @@ if ($user)
                 {
                     // Trạng thái tài khoản
                     if ($data_acc['status'] == 0) {
-                        $stt_acc = '<label class="label label-success">Hoạt động</label>';
+                        $stt_acc = '<label class="label label-success">Online</label>';
                     } else if ($data_acc['status'] == 1) {
-                        $stt_acc = '<label class="label label-warning">Khoá</label>';
+                        $stt_acc = '<label class="label label-warning">Lock</label>';
                     }
 
                     echo 
@@ -156,7 +156,7 @@ if ($user)
             // Nếu không có tài khoản
             else
             {
-                echo '<br><br><div class="alert alert-info">Chưa có tài khoản nào.</div>';
+                echo '<br><br><div class="alert alert-info"> You do not have account.</div>';
             }
         }
     }

@@ -6,11 +6,11 @@
   if ($data_user['position'] == '1') {
     // Lấy tổng số bài viết
     $sql_get_count_post = "SELECT id_post FROM posts";   
-    $label = 'tổng bài viết';
+    $label = 'total posts';
   } else {
     // Lấy số bài viết của tác giả
     $sql_get_count_post = "SELECT id_post FROM posts WHERE author_id = '$data_user[id_acc]'";
-    $label = 'bài viết';
+    $label = 'posts';
   }
 
   $count_post = $db->num_rows($sql_get_count_post);
@@ -32,11 +32,11 @@
   if ($data_user['position'] == '1') {
     // Lấy tổng bài viết xuất bản
     $sql_get_count_post_public = "SELECT id_post FROM posts WHERE status = '1'";
-    $label = 'tổng bài viết xuất bản';   
+    $label = 'total posted';   
   } else {
     // Lấy các bài viết xuất bản của tài khoản đó 
     $sql_get_count_post_public = "SELECT id_post FROM posts WHERE status = '1' AND author_id = '$data_user[id_acc]'";
-    $label = 'bài viết xuất bản';
+    $label = 'posted';
   }
 
   $count_post_public = $db->num_rows($sql_get_count_post_public);
@@ -58,11 +58,11 @@
   if ($data_user['position'] == '1') {
     // Lấy tổng bài viết ẩn
     $sql_get_count_post_hide = "SELECT id_post FROM posts WHERE status = '0'";
-    $label = 'tổng bài viết ẩn';   
+    $label = 'total hidden post';   
   } else {
     // Lấy các bài viết ẩn của tài khoản đó 
     $sql_get_count_post_hide = "SELECT id_post FROM posts WHERE status = '0' AND author_id = '$data_user[id_acc]'";
-    $label = 'bài viết ẩn';
+    $label = 'hidden post';
   }
 
   $count_post_hide = $db->num_rows($sql_get_count_post_hide);
@@ -87,7 +87,7 @@ if ($data_user['position'] == '1') {
 ?>
 
 <!-- Dashboard chuyên mục -->
-<h3>Chuyên mục</h3>
+<h3>Category</h3>
 <div class="row">
   <?php
 
@@ -100,7 +100,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-3">
       <div class="alert alert-info">
         <h1>' . $count_cate . '</h1>
-        <p>tổng chuyên mục</p>
+        <p>Category</p>
       </div>
     </div>
   ';
@@ -118,7 +118,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-3">
       <div class="alert alert-success">
         <h1>' . $count_cate_1 . '</h1>
-        <p>chuyên mục lớn</p>
+        <p>Large category</p>
       </div>
     </div>
   ';
@@ -136,7 +136,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-3">
       <div class="alert alert-warning">
         <h1>' . $count_cate_2 . '</h1>
-        <p>chuyên mục vừa</p>
+        <p>medium category</p>
       </div>
     </div>
   ';
@@ -154,7 +154,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-3">
       <div class="alert alert-danger">
         <h1>' . $count_cate_3 . '</h1>
-        <p>chuyên mục nhỏ</p>
+        <p>Smal category</p>
       </div>
     </div>
   ';
@@ -163,7 +163,7 @@ if ($data_user['position'] == '1') {
 </div>
 
 <!-- Dashboard tài khoản -->
-<h3>Tài khoản</h3>
+<h3>Accounts</h3>
 <div class="row">
   <?php
 
@@ -176,7 +176,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-4">
       <div class="alert alert-info">
         <h1>' . $count_acc . '</h1>
-        <p>tổng tài khoản</p>
+        <p>total account</p>
       </div>
     </div>
   ';
@@ -194,7 +194,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-4">
       <div class="alert alert-success">
         <h1>' . $count_acc_active . '</h1>
-        <p>tài khoản hoạt động</p>
+        <p>online accounts</p>
       </div>
     </div>
   ';
@@ -212,7 +212,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-4">
       <div class="alert alert-warning">
         <h1>' . $count_acc_locked . '</h1>
-        <p>tài khoản bị khoá</p>
+        <p>locked accounts</p>
       </div>
     </div>
   ';

@@ -6,19 +6,19 @@ if ($user)
 	// Nếu tài khoản là tác giả
 	if ($data_user['position'] == 0)
 	{
-		echo '<div class="alert alert-danger">Bạn không có đủ quyền để vào trang này.</div>';
+		echo '<div class="alert alert-danger">You do not have permission.</div>';
 	}
 	// Ngược lại tài khoản là admin
 	else if ($data_user['position'] == 1)
 	{
-		echo '<h3>Cài đặt chung</h3>';
+		echo '<h3>Setting</h3>';
 
 		// Mở/đóng hoạt động website
 		echo 
 		'
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
-		    	<h3 class="panel-title">Trang thái hoạt động</h3>
+		    	<h3 class="panel-title">Status</h3>
 		  	</div>
 		  	<div class="panel-body">
 		    	<form method="POST" id="formStatusWeb" onsubmit="return false;">
@@ -32,26 +32,26 @@ if ($user)
 			if ($data_web['status'] == '0') {
 				echo '
 					<div class="radio">
-						<label><input type="radio" value="1" name="stt_web"> Mở</label>
+						<label><input type="radio" value="1" name="stt_web"> Open</label>
 					</div>
 					<div class="radio">
-						<label><input type="radio" value="0" name="stt_web" checked> Đóng</label>
+						<label><input type="radio" value="0" name="stt_web" checked> Close</label>
 					</div>
 				';
 			} else if ($data_web['status'] == '1') {
 				echo '
 					<div class="radio">
-						<label><input type="radio" value="1" name="stt_web" checked> Mở</label>
+						<label><input type="radio" value="1" name="stt_web" checked> Open</label>
 					</div>
 					<div class="radio">
-						<label><input type="radio" value="0" name="stt_web"> Đóng</label>
+						<label><input type="radio" value="0" name="stt_web"> Close</label>
 					</div>
 				';
 			}
 		}
 
 		echo '
-					<button type="submit" class="btn btn-primary">Lưu</button><br><br>
+					<button type="submit" class="btn btn-primary">Save</button><br><br>
 					<div class="alert alert-danger hidden"></div>
 		    	</form>
 		  	</div>
@@ -68,23 +68,23 @@ if ($user)
 		'
 			<div class="panel panel-default">
 			  	<div class="panel-heading">
-			    	<h3 class="panel-title">Chỉnh sửa thông tin</h3>
+			    	<h3 class="panel-title">Edit website information</h3>
 			  	</div>
 			  	<div class="panel-body">
 			    	<form method="POST" id="formInfoWeb" onsubmit="return false;">
 						<div class="form-group">
-							<label>Tiều đề website</label>
+							<label>Title website</label>
 							<input type="text" class="form-control" value="' . $data_web['title'] . '" id="title_web">
 						</div>
 						<div class="form-group">
-							<label>Mô tả website</label>
+							<label> website Description</label>
 							<textarea class="form-control" id="descr_web">' . $data_web['descr'] . '</textarea>
 						</div>
 						<div class="form-group">
-							<label>Từ khoá website</label>
+							<label>Keyword website</label>
 							<input type="text" class="form-control" value="' . $data_web['keywords'] . '" id="keywords_web">
 						</div>
-						<button class="btn btn-primary" type="submit">Lưu</button><br><br>
+						<button class="btn btn-primary" type="submit">Save</button><br><br>
 						<div class="alert alert-danger hidden"></div>
 			    	</form>
 			  	</div>

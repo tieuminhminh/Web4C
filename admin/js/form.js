@@ -3,7 +3,7 @@ $_DOMAIN = 'http://localhost/blogWebsite/admin/';
 // Đăng nhập
 $('#formSignin button').on('click', function() {
 	$this = $('#formSignin button');
-	$this.html('Đang tải ...');
+	$this.html('Loading ...');
 
 	// Gán các giá trị trong các biến
 	$user_signin = $('#formSignin #user_signin').val();
@@ -13,8 +13,8 @@ $('#formSignin button').on('click', function() {
 	if ($user_signin == '' || $pass_signin == '')
 	{
 		$('#formSignin .alert').removeClass('hidden');
-		$('#formSignin .alert').html('Vui lòng điền đầy đủ thông tin.');
-		$this.html('Đăng nhập');
+		$('#formSignin .alert').html('Fill all the information .');
+		$this.html('Login');
 	}
 	// Ngược lại
 	else
@@ -37,35 +37,6 @@ $('#formSignin button').on('click', function() {
 		});
 	}
 });	
-
-// Tự động tạo slug
-function ChangeToSlug()
-{
-    var title, slug;
-    title = $('.title').val();
-    slug = title.toLowerCase();
- 
-    slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
-    slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
-    slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
-    slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
-    slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
-    slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
-    slug = slug.replace(/đ/gi, 'd');
-    slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');
-    slug = slug.replace(/ /gi, "-");
-    slug = slug.replace(/\-\-\-\-\-/gi, '-');
-    slug = slug.replace(/\-\-\-\-/gi, '-');
-    slug = slug.replace(/\-\-\-/gi, '-');
-    slug = slug.replace(/\-\-/gi, '-');
-    slug = '@' + slug + '@';
-    slug = slug.replace(/\@\-|\-\@|\@/gi, '');
-    $('.slug').val(slug);
-}
-
-$('.slug').on('click', function() {
-	ChangeToSlug();
-});
 
 // Tải chuyên mục cha ở chức năng thêm chuyên mục
 $('#formAddCate input[type="radio"]').on('click', function() {

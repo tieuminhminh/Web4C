@@ -3,7 +3,7 @@
 // Nếu đăng nhập
 if ($user)
 {
-    echo '<h3>Bài viết</h3>';
+    echo '<h3>Posts</h3>';
     // Lấy tham số ac
     if (isset($_GET['ac']))
     {
@@ -34,7 +34,7 @@ if ($user)
             echo
             '
                 <a href="' . $_DOMAIN . 'posts" class="btn btn-default">
-                    <span class="glyphicon glyphicon-arrow-left"></span> Trở về
+                    <span class="glyphicon glyphicon-arrow-left"></span> Back
                 </a> 
             ';
  
@@ -44,15 +44,15 @@ if ($user)
                 <p class="form-add-post">
                     <form method="POST" id="formAddPost" onsubmit="return false;">
                         <div class="form-group">
-                            <label>Tiêu đề bài viết</label>
+                            <label>Post Title</label>
                             <input type="text" class="form-control title" id="title_add_post">
                         </div>
                         <div class="form-group">
-                            <label>URL chuyên mục</label>
-                            <input type="text" class="form-control slug" placeholder="Nhấp vào để tự tạo" id="slug_add_post">
+                            <label>URL Category</label>
+                            <input type="text" class="form-control slug" placeholder="Click on auto generate" id="slug_add_post">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Tạo</button>
+                            <button type="submit" class="btn btn-primary">Create</button>
                         </div>
                         <div class="alert alert-danger hidden"></div>
                     </form>
@@ -74,10 +74,10 @@ if ($user)
                     echo
                     '
                         <a href="' . $_DOMAIN . 'posts" class="btn btn-default">
-                            <span class="glyphicon glyphicon-arrow-left"></span> Trở về
+                            <span class="glyphicon glyphicon-arrow-left"></span> Back
                         </a>
                         <a class="btn btn-danger" id="del_post" data-id="' . $id . '">
-                            <span class="glyphicon glyphicon-trash"></span> Xoá
+                            <span class="glyphicon glyphicon-trash"></span> Delete
                         </a> 
                     ';  
      
@@ -89,7 +89,7 @@ if ($user)
                         <p class="form-edit-post">
                             <form method="POST" id="formEditPost" data-id="' . $id . '" onsubmit="return false;">
                                 <div class="form-group">
-                                    <label>Trạng thái bài viết</label>
+                                    <label>Post Status</label>
                     ';
 
                     // Trạng thái bài viết
@@ -98,12 +98,12 @@ if ($user)
                         echo '
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="stt_edit_post" value="1" checked> Xuất bản
+                                    <input type="radio" name="stt_edit_post" value="1" checked> Pubish
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="stt_edit_post" value="0"> Ẩn
+                                    <input type="radio" name="stt_edit_post" value="0"> Hide
                                 </label>
                             </div>
                         ';
@@ -112,12 +112,12 @@ if ($user)
                         echo '
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="stt_edit_post" value="1"> Xuất bản
+                                    <input type="radio" name="stt_edit_post" value="1"> Publish
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="stt_edit_post" value="0" checked> Ẩn
+                                    <input type="radio" name="stt_edit_post" value="0" checked> Hide
                                 </label>
                             </div>
                         ';
@@ -126,11 +126,11 @@ if ($user)
                     echo '
                                 </div>
                                 <div class="form-group">
-                                    <label>Tiêu đề bài viết</label>
+                                    <label>Post Title</label>
                                     <input type="text" class="form-control title" value="' . $data_post['title'] . '" id="title_edit_post">
                                 </div>
                                 <div class="form-group">
-                                    <label>Slug bài viết</label>
+                                    <label>Slug Post</label>
                                     <input type="text" class="form-control slug" value="' . $data_post['slug'] . '" id="slug_edit_post">
                                 </div>
                                 <div class="form-group">
@@ -138,15 +138,15 @@ if ($user)
                                     <input type="text" class="form-control" value="' . $data_post['url_thumb'] . '" id="url_thumb_edit_post">
                                 </div>
                                 <div class="form-group">
-                                    <label>Mô tả bài viết</label>
+                                    <label>Post description</label>
                                     <textarea id="desc_edit_post" class="form-control">' . $data_post['descr'] . '</textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label>Từ khoá bài viết</label>
+                                    <label>Post keyword</label>
                                     <input type="text" class="form-control" value="' . $data_post['keywords'] . '" id="keywords_edit_post">
                                 </div>
                                 <div class="form-group cate_post_1">
-                                    <label>Chuyên mục lớn</label>
+                                    <label> Parent category</label>
                                     <select class="form-control" id="cate_post_1">
                     ';
 
@@ -154,7 +154,7 @@ if ($user)
                     $sql_get_cate_post_1 = "SELECT label, id_cate FROM categories WHERE type = '1'";
                     if ($db->num_rows($sql_get_cate_post_1)) {
                         if ($data_post['cate_1_id'] == '0') {
-                            echo '<option value="">Vui lòng chọn chuyên mục</option>';
+                            echo '<option value="">Choose category</option>';
                         }
                         foreach ($db->fetch_assoc($sql_get_cate_post_1, 0) as $key => $data_cate_1) {
                             if ($data_cate_1['id_cate'] == $data_post['cate_1_id']) {
@@ -164,7 +164,7 @@ if ($user)
                             }
                         }
                     } else {
-                        echo '<option value="">Chưa có chuyên mục lớn nào</option>';
+                        echo '<option value="">No parent category</option>';
                     }
 
                     echo '
@@ -172,7 +172,7 @@ if ($user)
                                     </select>
                                 </div>
                                 <div class="form-group cate_post_2">
-                                    <label>Chuyên mục vừa</label>
+                                    <label> Medium Category</label>
                                     <select class="form-control" id="cate_post_2">
                     ';
 
@@ -180,7 +180,7 @@ if ($user)
                     $sql_get_cate_post_2 = "SELECT label, id_cate FROM categories WHERE type = '2' AND parent_id = '$data_post[cate_1_id]'";
                     if ($db->num_rows($sql_get_cate_post_2)) {
                         if ($data_post['cate_2_id'] == '0') {
-                            echo '<option value="">Vui lòng chọn chuyên mục</option>';
+                            echo '<option value="">Choose category</option>';
                         }
                         foreach ($db->fetch_assoc($sql_get_cate_post_2, 0) as $key => $data_cate_2) {
                             if ($data_cate_2['id_cate'] == $data_post['cate_2_id']) {
@@ -190,7 +190,7 @@ if ($user)
                             }
                         }
                     } else {
-                        echo '<option value="">Chưa có chuyên mục vừa nào</option>';
+                        echo '<option value=""> No category </option>';
                     }
 
                     echo '
@@ -198,7 +198,7 @@ if ($user)
                                     </select>
                                 </div>
                                 <div class="form-group cate_post_3">
-                                    <label>Chuyên mục nhỏ</label>
+                                    <label>Small category</label>
                                     <select class="form-control" id="cate_post_3">
                     ';
 
@@ -206,7 +206,7 @@ if ($user)
                     $sql_get_cate_post_3 = "SELECT label, id_cate FROM categories WHERE type = '3' AND parent_id = '$data_post[cate_2_id]'";
                     if ($db->num_rows($sql_get_cate_post_3)) {
                         if ($data_post['cate_3_id'] == '0') {
-                            echo '<option value="">Vui lòng chọn chuyên mục</option>';
+                            echo '<option value="">Choose category</option>';
                         }
                         foreach ($db->fetch_assoc($sql_get_cate_post_3, 0) as $key => $data_cate_3) {
                             if ($data_cate_3['id_cate'] == $data_post['cate_3_id']) {
@@ -216,7 +216,7 @@ if ($user)
                             }
                         }
                     } else {
-                        echo '<option value="">Chưa có chuyên mục nhỏ nào</option>';
+                        echo '<option value="">No category</option>';
                     }
 
                     echo '
@@ -224,11 +224,11 @@ if ($user)
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Nội dung bài viết</label>
+                                    <label>Post content</label>
                                     <textarea id="body_edit_post" class="form-control">' . $data_post['body'] . '</textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                                 <div class="alert alert-danger hidden"></div>
                             </form>
@@ -237,7 +237,7 @@ if ($user)
                 }
                 else
                 {
-                    echo '<div class="alert alert-danger">ID bài viết không thuộc quyền sở hữu của bạn.</div>';
+                    echo '<div class="alert alert-danger">You do not have permission on this post.</div>';
                 }
             }
             else
@@ -245,7 +245,7 @@ if ($user)
                 // Hiển thị thông báo lỗi
                 echo
                 '
-                    <div class="alert alert-danger">ID bài viết đã bị xoá hoặc không tồn tại.</div>
+                    <div class="alert alert-danger"> this post has been delete or does not exist.</div>
                 ';
             }
         }
@@ -258,13 +258,13 @@ if ($user)
         echo
         '
             <a href="' . $_DOMAIN . 'posts/add" class="btn btn-default">
-                <span class="glyphicon glyphicon-plus"></span> Thêm
+                <span class="glyphicon glyphicon-plus"></span> Add
             </a> 
             <a href="' . $_DOMAIN . 'posts" class="btn btn-default">
                 <span class="glyphicon glyphicon-repeat"></span> Reload
             </a> 
             <a class="btn btn-danger" id="del_post_list">
-                <span class="glyphicon glyphicon-trash"></span> Xoá
+                <span class="glyphicon glyphicon-trash"></span> Delete
             </a> 
         ';
  
@@ -273,8 +273,8 @@ if ($user)
         if ($data_user['position'] == '1') {
             $sql_get_list_post = "SELECT * FROM posts ORDER BY id_post DESC";
         // Nếu là tác giả thì chỉ lấy những bài thuộc sở hữu
-        } else {
-            $sql_get_list_post = "SELECT * FROM posts WHERE author_id = '$data_user[id_acc]' ORDER BY id_post DESC LIMIT $start, $limit"; " ;
+        } else  {
+            $sql_get_list_post = "SELECT * FROM posts WHERE author_id = '$data_user[id_acc]' ORDER BY id_post DESC ";
         }
         // Nếu có bài viết
         if ($db->num_rows($sql_get_list_post))
@@ -305,7 +305,7 @@ if ($user)
                 <p>
                     <form method="POST" id="formSearchPost" onsubmit="return false;">
                         <div class="input-group">         
-                            <input type="text" class="form-control" id="kw_search_post" placeholder="Nhập ID, tiêu đề, slug ...">
+                            <input type="text" class="form-control" id="kw_search_post" placeholder=" ID, Title, ...">
                             <span class="input-group-btn">
                                 <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                             </span>
@@ -321,15 +321,14 @@ if ($user)
                         <tr>
                             <td><input type="checkbox"></td>
                             <td><strong>ID</strong></td>
-                            <td><strong>Tiêu đề</strong></td>
-                            <td><strong>Trạng thái</strong></td>
-                            <td><strong>Chuyên mục</strong></td>
-                            <td><strong>Lượt xem</strong></td>
+                            <td><strong>Title</strong></td>
+                            <td><strong>Status</strong></td>
+                            <td><strong>Category</strong></td>
             ';
 			
             // Nếu tài khoản là admin
             if ($data_user['position'] == '1') {
-                echo '<td><strong>Tác giả</strong></td>';
+                echo '<td><strong>Author</strong></td>';
             }
 
             echo '
@@ -350,9 +349,9 @@ if ($user)
             {
                 // Trạng thái bài viết
                 if ($data_post['status'] == 0) {
-                    $stt_post = '<label class="label label-warning">Ẩn</label>';
+                    $stt_post = '<label class="label label-warning">Hide</label>';
                 } else if ($data_post['status'] == 1) {
-                    $stt_post = '<label class="label label-success">Xuấn bản</label>';
+                    $stt_post = '<label class="label label-success">Publish</label>';
                 }
 
                 // Chuyên mục bài viết
@@ -362,7 +361,7 @@ if ($user)
                     $data_cate_1 = $db->fetch_assoc($sql_check_id_cate_1, 1);
                     $cate_post .= $data_cate_1['label'];
                 } else {
-                    $cate_post .= '<span class="text-danger">Lỗi</span>';
+                    $cate_post .= '<span class="text-danger">Error</span>';
                 }
 
                 $sql_check_id_cate_2 = "SELECT label, id_cate FROM categories WHERE id_cate = '$data_post[cate_2_id]' AND type = '2'";
@@ -370,7 +369,7 @@ if ($user)
                     $data_cate_2 = $db->fetch_assoc($sql_check_id_cate_2, 1);
                     $cate_post .= ', ' . $data_cate_2['label'];
                 } else {
-                    $cate_post .= ', <span class="text-danger">Lỗi</span>';
+                    $cate_post .= ', <span class="text-danger">Error</span>';
                 }
 
                 $sql_check_id_cate_3 = "SELECT label, id_cate FROM categories WHERE id_cate = '$data_post[cate_3_id]' AND type = '3'";
@@ -378,7 +377,7 @@ if ($user)
                     $data_cate_3 = $db->fetch_assoc($sql_check_id_cate_3, 1);
                     $cate_post .= ', ' . $data_cate_3['label'];
                 } else {
-                    $cate_post .= ', <span class="text-danger">Lỗi</span>';
+                    $cate_post .= ', <span class="text-danger">Error</span>';
                 }
 
                 // Tác giả bài viết
@@ -387,7 +386,7 @@ if ($user)
                     $data_author = $db->fetch_assoc($sql_get_author, 1);
                     $author_post = $data_author['display_name'];
                 } else {
-                    $author_post = '<span class="text-danger">Lỗi</span>';
+                    $author_post = '<span class="text-danger">Error</span>';
                 }
 
                 echo 
@@ -455,7 +454,7 @@ if ($user)
         // Nếu không có bài viết
         else
         {
-            echo '<br><br><div class="alert alert-info">Chưa có bài viết nào.</div>';
+            echo '<br><br><div class="alert alert-info"> No posts.</div>';
         }
     }
 }

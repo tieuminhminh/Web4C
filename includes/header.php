@@ -58,7 +58,7 @@ if (isset($_GET['sp']) && isset($_GET['id'])) {
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 		      		</button>
-		      		<a class="navbar-brand" href="<?php echo $_DOMAIN; ?>">Hanoi University Blogs</a>
+		      		<a class="navbar-brand" href="<?php echo $_DOMAIN; ?>">Traveling Blogs</a>
 		    	</div>
 
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -99,6 +99,9 @@ if (isset($_GET['sp']) && isset($_GET['id'])) {
 			      	</ul>
 					<ul class="nav navbar-nav navbar-right">
 			      		<li ><a href="http://localhost/blogWebsite/admin/">Sign In</a></li>
+			      	</ul>
+					  <ul class="nav navbar-nav navbar-right">
+			      		<li ><a href="http://localhost/blogWebsite/signUp/register.php">Register</a></li>
 			      	</ul>
 			    </div>
 		  	</div>
