@@ -6,19 +6,24 @@
     }
      
     //Nhúng file kết nối với database
-    include('core/init.php');
+    require_once '../admin/classes/DB.php';
+
+    // Kết nối database
+$db = new DB();
+$db->connect();
+$db->set_char('utf8');
           
     //Khai báo utf-8 để hiển thị được tiếng việt
     header('Content-Type: text/html; charset=UTF-8');
           
     //Lấy dữ liệu từ file dangky.php
-    $username   = addslashes($_POST['username']);
-    $password   = addslashes($_POST['pass']);
-    $email      = addslashes($_POST['email']);
-    $name   = addslashes($_POST['name']);
+    $username   = $_POST['username'];
+    $password   = md5($_POST['pass']);
+    $email      = $_POST['email'];
+    $name   =  $_POST['name'];
           
     //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
-    if (!$username || !$password || !$email || !$name || )
+    if (!$username || !$password || !$email || !$name  )
     {
         echo "Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
@@ -28,30 +33,20 @@
         $password = md5($password);
           
     //Kiểm tra tên đăng nhập này đã có người dùng chưa
-    if (mysql_num_rows(mysql_query("SELECT username FROM accounts WHERE username='$username'")) > 0){
+    $sql = "SELECT username FROM accounts WHERE username='$username'";
+
+    if ($db->num_rows($sql) > 0){
         echo "Tên đăng nhập này đã có người dùng. Vui lòng chọn tên đăng nhập khác. <a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
     }
           
     //Lưu thông tin thành viên vào bảng
-    @$addmember = mysql_query("
-        INSERT INTO member (
-            username,
-            password,
-            email,
-            name
-    
-        )
-        VALUE (
-            '{$username}',
-            '{$password}',
-            '{$email}',
-            '{$name}',
-        )
-    ");
+    $sql = "INSERT INTO accounts(username, password, email ,display_name) VALUES ('$username','$password','$email','$name')";
+    $db->query($sql);
                           
     //Thông báo quá trình lưu
-    if ($addmember)
+    $sql = "SELECT username FROM accounts WHERE username='$username'";
+    if ($db->num_rows($sql) > 0)
         echo "Quá trình đăng ký thành công. <a href='http://localhost/blogWebsite/'>Travling Blog</a>";
     else
         echo "Có lỗi xảy ra trong quá trình đăng ký. <a href='register.php'>Try again</a>";

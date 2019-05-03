@@ -1,17 +1,19 @@
 
 <html>
 	<head>
-		<title>Đăng ký thành viên</title>
+		<title>Register</title>
 
 		  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 
 	</head>
 <body>
-		
-				<h2>Register</h2>
-		
-		
-	<form class="form-horizontal" action="register.php" method="post">
+				
+			<h2>Register</h2>
+				
+				
+				
+				<a href="http://localhost/blogWebsite/"> Traveling blogs </a>
+	<form class="form-horizontal" action="process.php" method="post">
 		
 				
 			<div class="form-group">
@@ -47,7 +49,7 @@
 						<button type="submit"  class="btn btn-default" name="btn_submit">Register</button>
 					</div>
 				</div>
-		
+				
  
 	</form>
 	</body>
