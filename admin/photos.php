@@ -58,7 +58,7 @@ if ($user)
 		   	)";
 		   	$db->query($sql_up_file);
 		}
-		echo 'Upload thành công.';
+		echo 'Upload successful!';
 		$db->close();
 		new Redirect($_DOMAIN.'photos');
 	} 

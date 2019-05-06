@@ -154,7 +154,7 @@ if ($data_user['position'] == '1') {
     <div class="col-md-3">
       <div class="alert alert-danger">
         <h1>' . $count_cate_3 . '</h1>
-        <p>Smal category</p>
+        <p>Small category</p>
       </div>
     </div>
   ';

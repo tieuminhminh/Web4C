@@ -33,7 +33,7 @@ if ($user)
 				}
 				else
 				{
-					echo '<option value="0">Hiện chưa có chuyên mục cha nào</option>';
+					echo '<option value="0">There is no parent directory</option>';
 				}
 			}
 		}
@@ -55,7 +55,7 @@ if ($user)
 			// Nếu các giá trị rỗng
 			if ($label_add_cate == '' || $url_add_cate == '' || $type_add_cate == '' || $sort_add_cate == '')
 			{
-				echo $show_alert.'Vui lòng điền đầy đủ thông tin';
+				echo $show_alert.'Please fill in all fields';
 			}
 			// Ngược lại
 			else
@@ -63,17 +63,17 @@ if ($user)
 				// Nếu type chuyên mục không phải số
 				if (preg_match('/\D/', $type_add_cate))
 				{
-					echo $show_alert.'Đã có lỗi xảy ra, hãy thử lại sau.';
+					echo $show_alert.'An error occured, please try again later!';
 				}
 				// Nếu sort chuyên mục không phải số nguyên dương
 				else if (preg_match('/\D/', $sort_add_cate) || $sort_add_cate < 1)
 				{
-					echo $show_alert.'Sort chuyên mục phải là một số nguyên dương.';
+					echo $show_alert.'Category sort must be an integer!';
 				}
 				// Nếu id parent chuyên mục không phải số
 				else if (preg_match('/\D/', $parent_add_cate))
 				{
-					echo $show_alert.'Đã có lỗi xảy ra, hãy thử lại sau';
+					echo $show_alert.'An error occured, please try again later!';
 				}
 				// Nếu đúng 
 				else
@@ -89,7 +89,7 @@ if ($user)
 						'$date_current'
 					)";
 					$db->query($sql_add_cate);
-					echo $show_alert.$success.'Tạo chuyên mục thành công.';
+					echo $show_alert.$success.'Category has been created successfully!';
 					$db->close(); // Giải phóng
 					new Redirect($_DOMAIN.'categories'); // Trở về trang danh sách chuyên mục
 				}
@@ -120,7 +120,7 @@ if ($user)
 				}
 				else
 				{
-					echo '<option value="0">Hiện chưa có chuyên mục cha nào' . $type_edit_cate .'</option>';
+					echo '<option value="0">There is no parent directory' . $type_edit_cate .'</option>';
 				}
 			}
 		}
@@ -143,7 +143,7 @@ if ($user)
 			// Nếu các giá trị rỗng
 			if ($label_edit_cate == '' || $url_edit_cate == '' || $type_edit_cate == '' || $sort_edit_cate == '')
 			{
-				echo $show_alert.'Vui lòng điền đầy đủ thông tin';
+				echo $show_alert.'Please fill in all fields!';
 			}
 			// Ngược lại
 			else
@@ -151,17 +151,17 @@ if ($user)
 				// Nếu type chuyên mục không phải số
 				if (preg_match('/\D/', $type_edit_cate))
 				{
-					echo $show_alert.'Đã có lỗi xảy ra, hãy thử lại sau.';
+					echo $show_alert.'An error occured, please try again later!';
 				}
 				// Nếu sort chuyên mục không phải số nguyên dương
 				else if (preg_match('/\D/', $sort_edit_cate) || $sort_edit_cate < 1)
 				{
-					echo $show_alert.'Sort chuyên mục phải là một số nguyên dương.';
+					echo $show_alert.'Category sort must be an integer!';
 				}
 				// Nếu id parent chuyên mục không phải số
 				else if (preg_match('/\D/', $parent_edit_cate))
 				{
-					echo $show_alert.'Đã có lỗi xảy ra, hãy thử lại sau';
+					echo $show_alert.'An error occured, please try again later!';
 				}
 				// Nếu đúng 
 				else
@@ -176,7 +176,7 @@ if ($user)
 						WHERE id_cate = '$id_edit_cate'
 					";
 					$db->query($sql_edit_cate);
-					echo $show_alert.$success.'Tạo chuyên mục thành công.';
+					echo $show_alert.$success.'Category has been created successfully!';
 					$db->close(); // Giải phóng
 					new Redirect($_DOMAIN.'categories'); // Trở về trang danh sách chuyên mục
 				}

@@ -15,9 +15,11 @@ if ($db->num_rows($sql_get_data_post)) {
 }
 
 ?>
+
 <div class="container">
 	<div class="row">
 		<h1><?php echo $data_post['title']; ?></h1>
+		<p><?php echo "<img src='".$data_post['url_thumb']."' alt='url_thumb'>"; ?></p>
 		<div class="body-post">
 			<?php echo htmlspecialchars_decode($data_post['body']); ?>
 		</div>
@@ -31,13 +33,14 @@ if ($db->num_rows($sql_get_data_post)) {
 					$sql_get_data_cate = "SELECT label, url FROM categories WHERE id_cate = '$id_cate' AND type = '$i'";
 					if ($db->num_rows($sql_get_data_cate)) {
 						$data_cate = $db->fetch_assoc($sql_get_data_cate, 1);
-
+						
 						echo '<a class="btn btn-primary btn-sm" href="' . $_DOMAIN . 'category/' . $data_cate['url'] . '">' . $data_cate['label'] . '</a> ';
 					}
 				}
 			}
-
+			    
 			?>
+			
 		</div>
 	</div>
 	<hr>
@@ -67,7 +70,7 @@ if ($db->num_rows($sql_get_data_post)) {
 			}
 		// Không tồn tại thì thông báo
 		} else {
-			echo '<div class="well well-lg">Không có bài viết liên quan nào.</div>';
+			echo '<div class="well well-lg">No related posts</div>';
 		}
 
 		?>

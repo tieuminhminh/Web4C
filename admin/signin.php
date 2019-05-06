@@ -18,7 +18,7 @@ if (isset($_POST['user_signin']) && isset($_POST['pass_signin']))
 	// Nếu giá trị rỗng
 	if ($user_signin == '' || $pass_signin == '')
 	{
-		echo $show_alert.'Vui lòng điền đầy đủ thông tin.';
+		echo $show_alert.'Please fill in all fields!';
 	}
 	// Ngược lại
 	else
@@ -39,23 +39,23 @@ if (isset($_POST['user_signin']) && isset($_POST['pass_signin']))
 					$session->send($user_signin);
 					$db->close(); // Giải phóng
 					
-					echo $show_alert.$success.'Đăng nhập thành công.';
+					echo $show_alert.$success.'Login successfully!';
 					new Redirect($_DOMAIN); // Trở về trang index
 				}
 				else
 				{
-					echo $show_alert.'Tài khoản của bạn đã bị khoá, vui lòng liên hệ quản trị viện để biết thêm thông tin chi tiết.';
+					echo $show_alert.'Your account has been disabled. Please see your Administrator!';
 				}
 			}
 			else
 			{
-				echo $show_alert.'Mật khẩu không chính xác.';
+				echo $show_alert.'Incorrect password!';
 			}
 		}
 		// Ngược lại không tồn tại username
 		else
 		{
-			echo $show_alert.'Tên đăng nhập không tồn tại.';
+			echo $show_alert.'Username does not exist!';
 		}
 	}
 }
