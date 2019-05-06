@@ -47,8 +47,12 @@ if (isset($_GET['sp']) && isset($_GET['id'])) {
 		<!-- ... -->
 
 		<link rel="stylesheet" href="<?php echo $_DOMAIN; ?>admin/bootstrap/css/bootstrap.min.css">
+		
 	</head>
 	<body>
+
+
+
 		<nav class="navbar navbar-default" role="navigation">
 		  	<div class="container-fluid">
 		    	<div class="navbar-header">
@@ -58,7 +62,7 @@ if (isset($_GET['sp']) && isset($_GET['id'])) {
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 		      		</button>
-		      		<a class="navbar-brand" href="<?php echo $_DOMAIN; ?>">Traveling Blogs</a>
+		      		<a class="navbar-brand" style = "font-family: Impact" href="<?php echo $_DOMAIN; ?>">Travel Blog</a>
 		    	</div>
 
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

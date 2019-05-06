@@ -27,7 +27,7 @@ if ($user)
 			// Nếu các giá trị rỗng
 			if ($title_add_post == '' || $slug_add_post == '')
 			{
-				echo $show_alert.'Vui lòng điền đầy đủ thông tin';
+				echo $show_alert.'Please fill in all fields!';
 			}
 			// Ngược lại
 			else
@@ -37,7 +37,7 @@ if ($user)
 				// Nếu bài viết tồn tại
 				if ($db->num_rows($sql_check_post_exist))
 				{
-					echo $show_alert.'Bài viết có tiêu đề hoặc slug đã tồn tại.';
+					echo $show_alert.'Post has already has a title or slug has already existed!';
 				}
 				else
 				{
@@ -59,7 +59,7 @@ if ($user)
 						'$date_current'
 					)";
 					$db->query($sql_add_post);
-					echo $show_alert.$success.'Thêm bài viết thành công.';
+					echo $show_alert.$success.'Add successful!';
 					$db->close(); // Giải phóng
 					new Redirect($_DOMAIN.'posts'); // Trở về trang danh sách bài viết
 				}
@@ -78,7 +78,7 @@ if ($user)
 					echo '<option value="' . $data_cate_2['id_cate'] . '">' . $data_cate_2['label'] . '</option>';
 				}
 			} else {
-				echo '<option value="">Chưa có chuyên mục vừa nào</option>';
+				echo '<option value="">There is no sub-folder!</option>';
 			}
 		}
 		// Chuyên mục nhỏ
@@ -92,7 +92,7 @@ if ($user)
 					echo '<option value="' . $data_cate_3['id_cate'] . '">' . $data_cate_3['label'] . '</option>';
 				}
 			} else {
-				echo '<option value="">Chưa có chuyên mục nhỏ nào</option>';
+				echo '<option value="">There is no small sub-folder!</option>';
 			}
 		}
 
@@ -123,16 +123,16 @@ if ($user)
 			// Nếu các giá trị rỗng
 			if ($stt_edit_post == '' || $title_edit_post == '' || $slug_edit_post == '' || $cate_1_edit_post == '' || $cate_2_edit_post == '' || $cate_3_edit_post == '' || $body_edit_post == '') 
 			{
-				echo $show_alert.'Vui lòng điền đầy đủ thông tin.';
+				echo $show_alert.'Please fill in all fields!';
 			} 
 			else if (!$db->num_rows($sql_check_id_post))
 			{
-				echo $show_alert.'Đã có lỗi xảy ra, vui lòng thử lại.';
+				echo $show_alert.'An error occured, please try again later!';
 			}
 			// Kiểm tra url ảnh
 			else if ($url_thumb_edit_post != '' && filter_var($url_thumb_edit_post, FILTER_VALIDATE_URL) === false)
 			{
-				echo $show_alert.'Vui lòng nhập url thumbnail hợp lệ.';
+				echo $show_alert.'Please enter a valid thumbnail URL!';
 			}
 			else
 			{
@@ -152,7 +152,7 @@ if ($user)
 				";
 				$db->query($sql_edit_post);
 				$db->close();
-				echo $show_alert.$success.'Chỉnh sửa bài viết thành công.';
+				echo $show_alert.$success.'Edit post successfully!';
 				new Redirect($_DOMAIN.'posts/edit/'.$id_post);
 			}
 		}
@@ -208,14 +208,14 @@ if ($user)
 				            <tr>
 				                <td><input type="checkbox"></td>
 				                <td><strong>ID</strong></td>
-				                <td><strong>Tiêu đề</strong></td>
-				                <td><strong>Trạng thái</strong></td>
-				                <td><strong>Chuyên mục</strong></td>
-				                <td><strong>Lượt xem</strong></td>
+				                <td><strong>Title</strong></td>
+				                <td><strong>Status</strong></td>
+				                <td><strong>Category</strong></td>
+				                
 				    ';
                 // Nếu tài khoản là admin
 			 if ($data_user['position'] == '1') {
-                echo '<td><strong>Tác giả</strong></td>';
+                echo '<td><strong>Author</strong></td>';
              }
 
             echo '
@@ -228,9 +228,9 @@ if ($user)
 				    {
 				        // Trạng thái bài viết
 				        if ($data_post['status'] == 0) {
-				            $stt_post = '<label class="label label-warning">Ẩn</label>';
+				            $stt_post = '<label class="label label-warning">Hide</label>';
 				        } else if ($data_post['status'] == 1) {
-				            $stt_post = '<label class="label label-success">Xuấn bản</label>';
+				            $stt_post = '<label class="label label-success">Publish</label>';
 				        }
 
 				        // Chuyên mục bài viết
@@ -240,7 +240,7 @@ if ($user)
 				            $data_cate_1 = $db->fetch_assoc($sql_check_id_cate_1, 1);
 				            $cate_post .= $data_cate_1['label'];
 				        } else {
-				            $cate_post .= '<span class="text-danger">Lỗi</span>';
+				            $cate_post .= '<span class="text-danger">Error</span>';
 				        }
 
 				        $sql_check_id_cate_2 = "SELECT label, id_cate FROM categories WHERE id_cate = '$data_post[cate_2_id]' AND type = '2'";
@@ -248,7 +248,7 @@ if ($user)
 				            $data_cate_2 = $db->fetch_assoc($sql_check_id_cate_2, 1);
 				            $cate_post .= ', ' . $data_cate_2['label'];
 				        } else {
-				            $cate_post .= ', <span class="text-danger">Lỗi</span>';
+				            $cate_post .= ', <span class="text-danger">Error</span>';
 				        }
 
 				        $sql_check_id_cate_3 = "SELECT label, id_cate FROM categories WHERE id_cate = '$data_post[cate_3_id]' AND type = '3'";
@@ -256,7 +256,7 @@ if ($user)
 				            $data_cate_3 = $db->fetch_assoc($sql_check_id_cate_3, 1);
 				            $cate_post .= ', ' . $data_cate_3['label'];
 				        } else {
-				            $cate_post .= ', <span class="text-danger">Lỗi</span>';
+				            $cate_post .= ', <span class="text-danger">Error</span>';
 				        }
 
 				        // Tác giả bài viết
@@ -265,7 +265,7 @@ if ($user)
 				            $data_author = $db->fetch_assoc($sql_get_author, 1);
 				            $author_post = $data_author['display_name'];
 				        } else {
-				            $author_post = '<span class="text-danger">Lỗi</span>';
+				            $author_post = '<span class="text-danger">Error</span>';
 				        }
 
 				        echo 
@@ -301,7 +301,7 @@ if ($user)
 				// Ngược lại không có kết quả
 				else
 				{
-					echo '<div class="alert alert-info">Không tìm thấy kết quả nào cho từ khoá <strong>' . $kw_search_post . '</strong>.</div>';
+					echo '<div class="alert alert-info">No items match your search<strong>' . $kw_search_post . '</strong>.</div>';
 				}
 			}
 		}

@@ -42,7 +42,7 @@ if ($user)
 
 		$sql_up_avt = "UPDATE accounts SET url_avatar = '$url_img' WHERE id_acc = '$data_user[id_acc]'";
 		$db->query($sql_up_avt);
-		echo 'Upload thành công.';
+		echo 'Upload successful';
 		$db->close();
 		new Redirect($_DOMAIN.'profile');
 	} 
@@ -83,13 +83,13 @@ if ($user)
 			if ($dn_update && $email_update) {
 				// Kiểm tra tên hiển thị
 				if (strlen($dn_update) < 3 || strlen($dn_update) > 50) {
-					echo $show_alert.'Tên hiển thị phải nằm trong khoảng từ 3-50 ký tự.';
+					echo $show_alert.'Display name must contain 3 to 50 characters!';
 				// Kiểm tra email	
 				} else if (filter_var($email_update, FILTER_VALIDATE_EMAIL) === FALSE) {
-					echo $show_alert.'Email không hợp lệ.';
+					echo $show_alert.'Invalid email!';
 				// Kiểm tra số điện thoại
 				} else if ($phone_update && (strlen($phone_update) < 10 || strlen($phone_update) > 11 || preg_match('/^[0-9]+$/', $phone_update) == false)) {
-					echo $show_alert.strlen($phone_update) . 'Số điện thoại không hợp lệ.';
+					echo $show_alert.strlen($phone_update) . 'Invalid phone number!';
 				} else {
 					$sql_update_info = "UPDATE accounts SET
 						display_name = '$dn_update',
@@ -102,11 +102,11 @@ if ($user)
 						WHERE id_acc = '$data_user[id_acc]'
 					";
 					$db->query($sql_update_info);
-					echo $success.'Cập nhật thông tin thành công.';
+					echo $success.'Update information successfully!';
 					new Redirect($_DOMAIN.'profile');
 				}
 			} else {
-				echo $show_alert.'Vui lòng điền đầy đủ thông tin.';
+				echo $show_alert.'Please fill in all form!';
 			}
 		}
 		// Đổi mật khẩu
@@ -125,22 +125,22 @@ if ($user)
 			if ($old_pw_change && $new_pw_change && $re_new_pw_change) {
 				// Kiểm tra mật khẩu cũ chính xác
 				if ($old_pw_change != $data_user['password']) {
-					echo $show_alert.'Mật khẩu cũ không chính xác.';
+					echo $show_alert.'Old password is incorrect!';
 				// Kiểm tra mật khẩu mới	
 				} else if (strlen($new_pw_change) < 6) {
-					echo $show_alert.'Mật khẩu mới quá ngắn.';
+					echo $show_alert.'New password is weak!';
 				// Kiểm tra mật khẩu mới khớp với mật khẩu mới nhập lại	
 				} else if ($new_pw_change != $re_new_pw_change) {
-					echo $show_alert.'Mật khẩu mới nhập lại không khớp.';
+					echo $show_alert.'Unmatched confirm new password';
 				} else {
 					$new_pw_change = md5($new_pw_change);
 					$sql_change_pw = "UPDATE accounts SET password = '$new_pw_change' WHERE id_acc = '$data_user[id_acc]'";
 					$db->query($sql_change_pw);
-					echo $success.'Thay đổi mật khẩu thành công.';
+					echo $success.'Password has been changed successfully!';
 					new Redirect($_DOMAIN.'profile');
 				}
 			} else {
-				echo $show_alert.'Vui lòng điền đầy đủ thông tin.';
+				echo $show_alert.'Please fill in all fields!';
 			}
 		}		
 	}

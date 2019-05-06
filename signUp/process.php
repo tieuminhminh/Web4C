@@ -26,7 +26,7 @@ $db->set_char('utf8');
     //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
     if (!$username || !$password || !$email || !$name  )
     {
-        echo "Vui lòng nhập đầy đủ thông tin. <a href='javascript: history.go(-1)'>Trở lại</a>";
+        echo "Please fill in all fields! <a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
     }
           
@@ -37,7 +37,7 @@ $db->set_char('utf8');
     $sql = "SELECT username FROM accounts WHERE username='$username'";
 
     if ($db->num_rows($sql) > 0){
-        echo "Tên đăng nhập này đã có người dùng. Vui lòng chọn tên đăng nhập khác. <a href='javascript: history.go(-1)'>Trở lại</a>";
+        echo "This username has been taken, please try another! <a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
     }
           
@@ -48,7 +48,7 @@ $db->set_char('utf8');
     //Thông báo quá trình lưu
     $sql = "SELECT username FROM accounts WHERE username='$username'";
     if ($db->num_rows($sql) > 0)
-        echo "Quá trình đăng ký thành công. <a href='http://localhost/blogWebsite/'>Travling Blog</a>";
+        echo "Register successful! <a href='http://localhost/blogWebsite/'>Travling Blog</a>";
     else
-        echo "Có lỗi xảy ra trong quá trình đăng ký. <a href='register.php'>Try again</a>";
+        echo "Registration Error! <a href='register.php'>Try again</a>";
 ?>

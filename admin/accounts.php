@@ -29,17 +29,17 @@ if ($user)
 			$sql_check_un_exist = "SELECT username FROM accounts WHERE username = '$un_add_acc'";
 
 			if ($un_add_acc == '' || $pw_add_acc == '' || $repw_add_acc == '') {
-				echo $show_alert.'Vui lòng điền đầy đủ thông tin.';
+				echo $show_alert.'Please fill in all fields!';
 			} else if (strlen($un_add_acc) < 6 || strlen($un_add_acc) > 32) {
-				echo $show_alert.'Tên đăng nhập nằm trong khoảng 6-32 ký tự.';
+				echo $show_alert.'Username must contain 6 to 32 characters!';
 			} else if (preg_match('/\W/', $un_add_acc)) {
-				echo $show_alert.'Tên đăng nhập không chứa kí tự đậc biệt và khoảng trắng.';
+				echo $show_alert.'Username must not contain special characters and space!';
 			} else if ($db->num_rows($sql_check_un_exist)) {
-				echo $show_alert.'Tên đăng nhập đã tồn tại.';
+				echo $show_alert.'This username is already existed';
 			} else if (strlen($pw_add_acc) < 6) {
-				echo $show_alert.'Mật khẩu quá ngắn.';
+				echo $show_alert.'Password too weak!';
 			} else if ($pw_add_acc != $repw_add_acc) {
-				echo $show_alert.'Mật khẩu nhập lại không khớp.';
+				echo $show_alert.'Password not matched!';
 			} else {
 				$pw_add_acc = md5($pw_add_acc);
 				$sql_add_acc = "INSERT INTO accounts VALUES (
@@ -61,7 +61,7 @@ if ($user)
 				$db->query($sql_add_acc);
 				$db->close();
 
-				echo $show_alert.$success.'Thêm tài khoản thành công.';
+				echo $show_alert.$success.'Add account successfully!';
 				new Redirect($_DOMAIN.'accounts'); // Trở về trang danh sách tài khoản
 			}
 		}
