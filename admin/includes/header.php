@@ -22,7 +22,7 @@
 		'
 			<div class="container">
 				<div class="page-header">
-		  			<h1>Newspage <small>Administration</small></h1>
+		  			<h1>Traveling Blogs <small>Administration</small></h1>
 				</div><!-- div.page-header -->
 			</div><!-- div.container -->
 		';

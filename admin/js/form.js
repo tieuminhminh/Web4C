@@ -24,7 +24,7 @@ $('#formSignin button').on('click', function() {
 			url : $_DOMAIN + 'signin.php',
 			data : {
 				user_signin : $user_signin,
-				pass_signin : $pass_signin
+				pass_signin : $pass_signin,
 			}, success : function(data) {
 				$('#formSignin .alert').removeClass('hidden');
 				$('#formSignin .alert').html(data);

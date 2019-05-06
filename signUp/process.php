@@ -18,9 +18,10 @@ $db->set_char('utf8');
           
     //Lấy dữ liệu từ file dangky.php
     $username   = $_POST['username'];
-    $password   = md5($_POST['pass']);
+    $password   = ($_POST['pass']);
     $email      = $_POST['email'];
     $name   =  $_POST['name'];
+    $password = md5($password);
           
     //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
     if (!$username || !$password || !$email || !$name  )
@@ -30,7 +31,7 @@ $db->set_char('utf8');
     }
           
         // Mã khóa mật khẩu
-        $password = md5($password);
+    //    $password = md5($password);
           
     //Kiểm tra tên đăng nhập này đã có người dùng chưa
     $sql = "SELECT username FROM accounts WHERE username='$username'";
