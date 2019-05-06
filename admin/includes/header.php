@@ -7,11 +7,14 @@
 
 	<!-- Liên kết Bootstrap CSS -->
 	<link rel="stylesheet" href="<?php echo $_DOMAIN; ?>bootstrap/css/bootstrap.min.css"/> 
-
+	
 	<!-- Liên kết thư viện jQuery -->
-	<script src="<?php echo $_DOMAIN; ?>js/jquery.min.js"></script>	     
+	<script src="<?php echo $_DOMAIN; ?>js/jquery.min.js"></script>	   
+	<a href = "http://localhost/blogWebsite/">Back to Home page</a> 
 </head>
 <body>
+
+
 	<!-- NAVBAR -->
 	<?php
 
@@ -26,6 +29,7 @@
 				</div><!-- div.page-header -->
 			</div><!-- div.container -->
 		';
+	
 	}
 	// Nếu đăng nhập
 	else
@@ -40,6 +44,7 @@
 				</div><!-- div.container-fluid -->
 			</nav>
 		';
+		
 	}
 
 	?>
