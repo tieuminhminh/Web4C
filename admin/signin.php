@@ -49,7 +49,7 @@ if (isset($_POST['user_signin']) && isset($_POST['pass_signin']))
 			}
 			else
 			{
-				echo $show_alert.'Incorrect password!';
+				echo $show_alert.'Incorrect password! Back to <a href = "http://localhost/blogWebsite/"> Home page</a>';
 			}
 		}
 		// Ngược lại không tồn tại username
