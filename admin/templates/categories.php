@@ -11,7 +11,7 @@ if ($user)
 	// Ngược lại tài khoản là admin
 	else if ($data_user['position'] == 1)
 	{
-		echo '<h3>Chuyên mục</h3>';
+		echo '<h3>Category</h3>';
 		// Lấy tham số ac
 		if (isset($_GET['ac']))
 		{

@@ -42,7 +42,7 @@ if ($user)
                 echo
                 '
                     <a href="' . $_DOMAIN . 'accounts" class="btn btn-default">
-                        <span class="glyphicon glyphicon-arrow-left"></span> Trở về
+                        <span class="glyphicon glyphicon-arrow-left"></span> Back
                     </a> 
                 ';
      

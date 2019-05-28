@@ -26,12 +26,12 @@ $db->set_char('utf8');
     //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
     if (!$username || !$password || !$email || !$name  )
     {
-        echo "Please fill in all fields! <a href='javascript: history.go(-1)'>Trở lại</a>";
+        echo "Please fill in all fields! <a href='javascript: history.go(-1)'>Back</a>";
         exit;
     }
           
         // Mã khóa mật khẩu
-    //    $password = md5($password);
+    
           
     //Kiểm tra tên đăng nhập này đã có người dùng chưa
     $sql = "SELECT username FROM accounts WHERE username='$username'";

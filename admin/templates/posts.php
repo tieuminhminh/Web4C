@@ -286,7 +286,7 @@ if ($user)
                 $current_page = '';
             }
 
-            $limit = 10; // Giới hạn số bài viết trong 1 trang
+            $limit = 8; // Giới hạn số bài viết trong 1 trang
             $total_page = ceil($db->num_rows($sql_get_list_post) / $limit); // Tổng trang
             $start = ($current_page - 1) * $limit; // Vị trí bắt đầu lấy trang
 

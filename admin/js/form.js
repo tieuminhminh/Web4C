@@ -1,6 +1,6 @@
 $_DOMAIN = 'http://localhost/blogWebsite/admin/';
 
-// Đăng nhập
+// Login
 $('#formSignin button').on('click', function() {
 	$this = $('#formSignin button');
 	$this.html('Loading ...');
@@ -28,11 +28,11 @@ $('#formSignin button').on('click', function() {
 			}, success : function(data) {
 				$('#formSignin .alert').removeClass('hidden');
 				$('#formSignin .alert').html(data);
-				$this.html('Đăng nhập');
+				$this.html('Login');
 			}, error : function() {
 				$('#formSignin .alert').removeClass('hidden');
-				$('#formSignin .alert').html('Không thể đăng nhập vào lúc này, hãy thử lại sau.');
-				$this.html('Đăng nhập');
+				$('#formSignin .alert').html('Can not login now.try it late.');
+				$this.html('Login');
 			}
 		});
 	}
@@ -60,7 +60,7 @@ $('#formAddCate input[type="radio"]').on('click', function() {
 				$('.parent-add-cate select').html(data);
 			}, error : function() {
 				$('.parent-add-cate').removeClass('hidden');
-				$('.parent-add-cate').html('Đã có lỗi xảy ra, hãy thử lại sau.');
+				$('.parent-add-cate').html('something wrong, try it later.');
 			}
 		});
 	} 
@@ -78,7 +78,7 @@ $('#formAddCate input[type="radio"]').on('click', function() {
 				$('.parent-add-cate select').html(data);
 			}, error : function() {
 				$('.parent-add-cate').removeClass('hidden');
-				$('.parent-add-cate').html('Đã có lỗi xảy ra, hãy thử lại sau.');
+				$('.parent-add-cate').html('something wrong, try it later.');
 			}
 		});
 	}
@@ -87,7 +87,7 @@ $('#formAddCate input[type="radio"]').on('click', function() {
 // Thêm chuyên mục
 $('#formAddCate button').on('click', function() {
 	$this = $('#formAddCate button');
-	$this.html('Đang tải ...');
+	$this.html('loading ...');
 
 	// Gán các giá trị trong các biến
 	$label_add_cate = $('#formAddCate #label_add_cate').val();
@@ -100,7 +100,7 @@ $('#formAddCate button').on('click', function() {
 	if ($label_add_cate == '' || $url_add_cate == '' || $type_add_cate == '' || $sort_add_cate == '')
 	{
 		$('#formAddCate .alert').removeClass('hidden');
-		$('#formAddCate .alert').html('Vui lòng điền đầy đủ thông tin.');
+		$('#formAddCate .alert').html('please fil in all information.');
 		$this.html('Tạo');
 	}
 	// Ngược lại
@@ -153,7 +153,7 @@ $('#formEditCate input[type="radio"]').on('click', function() {
 				$('.parent-edit-cate select').html(data);
 			}, error : function() {
 				$('.parent-edit-cate').removeClass('hidden');
-				$('.parent-edit-cate').html('Đã có lỗi xảy ra, hãy thử lại sau.');
+				$('.parent-edit-cate').html('something wrong, try it later.');
 			}
 		});
 	} 
@@ -172,7 +172,7 @@ $('#formEditCate input[type="radio"]').on('click', function() {
 				$('.parent-edit-cate select').html(data);
 			}, error : function() {
 				$('.parent-edit-cate').removeClass('hidden');
-				$('.parent-edit-cate').html('Đã có lỗi xảy ra, hãy thử lại sau.');
+				$('.parent-edit-cate').html('something wrong, try it later.');
 			}
 		});
 	}
@@ -181,10 +181,10 @@ $('#formEditCate input[type="radio"]').on('click', function() {
 // Chỉnh sửa chuyên mục
 $('#formEditCate button').on('click', function() {
 	$this = $('#formEditCate button');
-	$this.html('Đang tải ...');
+	$this.html('Loading...');
 
 	// Gán các giá trị trong các biến
-	$label_edit_cate = $('#formEditCate #label_edit_cate').val();
+	$label_edit_cate = s$('#formEditCate #label_edit_cate').val();
 	$url_edit_cate = $('#formEditCate #url_edit_cate').val();
 	$type_edit_cate = $('#formEditCate input[name="type_edit_cate"]:radio:checked').val();
 	$parent_edit_cate = $('#formEditCate #parent_edit_cate').val();
@@ -195,8 +195,8 @@ $('#formEditCate button').on('click', function() {
 	if ($label_edit_cate == '' || $url_edit_cate == '' || $type_edit_cate == '' || $sort_edit_cate == '')
 	{
 		$('#formEditCate .alert').removeClass('hidden');
-		$('#formEditCate .alert').html('Vui lòng điền đầy đủ thông tin.');
-		$this.html('Lưu thay đổi');
+		$('#formEditCate .alert').html('please fil in all information.');
+		$this.html('Save change');
 	}
 	// Ngược lại
 	else
@@ -215,11 +215,11 @@ $('#formEditCate button').on('click', function() {
 			}, success : function(data) {
 				$('#formEditCate .alert').removeClass('hidden');
 				$('#formEditCate .alert').html(data);
-				$this.html('Lưu thay đổi');
+				$this.html('Save change');
 			}, error : function() {
 				$('#formEditCate .alert').removeClass('hidden');
-				$('#formEditCate .alert').html('Không thể chỉnh sửa chuyên mục vào lúc này, hãy thử lại sau.');
-				$this.html('Lưu thay đổi');
+				$('#formEditCate .alert').html('something wrong, try it later.');
+				$this.html('Save change');
 			}
 		});
 	}
@@ -232,7 +232,7 @@ $('.list input[type="checkbox"]:eq(0)').change(function() {
 
 // Xoá nhiều chuyên mục cùng lúc
 $('#del_cate_list').on('click', function() {
-	$confirm = confirm('Bạn có chắc chắn muốn xoá các chuyên mục đã chọn không?');
+	$confirm = confirm('Are you sure to delete category?');
 	if ($confirm == true)
 	{
 		$id_cate = [];
@@ -243,7 +243,7 @@ $('#del_cate_list').on('click', function() {
 
 		if ($id_cate.length === 0)
 		{
-			alert('Vui lòng chọn ít nhất một chuyên mục.');
+			alert('choose at least one.');
 		}
 		else
 		{
@@ -257,7 +257,7 @@ $('#del_cate_list').on('click', function() {
 				success : function(data) {
 					location.reload();
 				}, error : function() {
-					alert('Đã có lỗi xảy ra, hãy thử lại.');
+					alert('Something wrong try it later.');
 				}
 			});
 		}
@@ -270,7 +270,7 @@ $('#del_cate_list').on('click', function() {
 
 // Xoá chuyên mục chỉ định trong bảng danh sách
 $('.del-cate-list').on('click', function() {
-	$confirm = confirm('Bạn có chắc chắn muốn xoá chuyên mục này không?');
+	$confirm = confirm('Are you sure to delete this category?');
 	if ($confirm == true)
 	{
 		$id_cate = $(this).attr('data-id');
@@ -295,7 +295,7 @@ $('.del-cate-list').on('click', function() {
 
 // Xoá chuyên mục chỉ định trong trang chỉnh sửa
 $('#del_cate').on('click', function() {
-	$confirm = confirm('Bạn có chắc chắn muốn xoá chuyên mục này không?');
+	$confirm = confirm('Are you sure to delete this category?');
 	if ($confirm == true)
 	{
 		$id_cate = $(this).attr('data-id');
@@ -322,13 +322,13 @@ $('#del_cate').on('click', function() {
 function preUpImg() {
 	img_up = $('#img_up').val();
 	count_img_up = $('#img_up').get(0).files.length;
-	$('#formUpImg .box-pre-img').html('<p><strong>Ảnh xem trước</strong></p>');
+	$('#formUpImg .box-pre-img').html('<p><strong>image</strong></p>');
 	$('#formUpImg .box-pre-img').removeClass('hidden');
 
 	// Nếu đã chọn ảnh
 	if (img_up != '')
 	{
-		$('#formUpImg .box-pre-img').html('<p><strong>Ảnh xem trước</strong></p>');
+		$('#formUpImg .box-pre-img').html('<p><strong>image</strong></p>');
 		$('#formUpImg .box-pre-img').removeClass('hidden');
 		for (i = 0; i <= count_img_up - 1; i++)
 		{
@@ -355,7 +355,7 @@ $('#formUpImg').submit(function(e) {
 	count_img_up = $('#img_up').get(0).files.length;
 	error_size_img = 0;
 	error_type_img = 0;
-	$('#formUpImg button[type=submit]').html('Đang tải ...');
+	$('#formUpImg button[type=submit]').html('loading ...');
 
 	// Nếu có chọn ảnh
 	if (img_up) {
@@ -387,16 +387,16 @@ $('#formUpImg').submit(function(e) {
         if (error_size_img >= 1) {
         	$('#formUpImg button[type=submit]').html('Upload');
         	$('#formUpImg .alert').removeClass('hidden');
-        	$('#formUpImg .alert').html('Một trong các tệp đã chọn có dung lượng lớn hơn mức cho phép.');
+        	$('#formUpImg .alert').html('this file is too big.');
         // Nếu số lượng ảnh vượt quá 20 file
         } else if (count_img_up > 20) {
         	$('#formUpImg button[type=submit]').html('Upload');
         	$('#formUpImg .alert').removeClass('hidden');
-        	$('#formUpImg .alert').html('Số file upload cho mỗi lần vượt quá mức cho phép.');
+        	$('#formUpImg .alert').html('over 20 file.');
         } else if (error_type_img >= 1) {
         	$('#formUpImg button[type=submit]').html('Upload');
         	$('#formUpImg .alert').removeClass('hidden');
-        	$('#formUpImg .alert').html('Một trong những file ảnh không đúng định dạng cho phép.');
+        	$('#formUpImg .alert').html(' this image is wrong fomat.');
         } else {
         	$(this).ajaxSubmit({ 
                 beforeSubmit: function() {
@@ -416,7 +416,7 @@ $('#formUpImg').submit(function(e) {
                 error: function() {
                 	$('#formUpImg button[type=submit]').html('Upload');
                     $('#formUpImg .alert').removeClass('hidden');  
-                    $('#formUpImg .alert').html('Không thể upload hình ảnh vào lúc này, hãy thử lại sau.');
+                    $('#formUpImg .alert').html('Can not upload now, try later.');
                 },
                 resetForm: true 
             }); 
@@ -426,7 +426,7 @@ $('#formUpImg').submit(function(e) {
 	} else {
 		$('#formUpImg button[type=submit]').html('Upload');
 		$('#formUpImg .alert').removeClass('hidden');
-		$('#formUpImg .alert').html('Vui lòng chọn tệp hình ảnh.');
+		$('#formUpImg .alert').html('please choose image.');
 	}
 });
 
@@ -500,7 +500,7 @@ $('#formAddPost button').on('click', function() {
 
 	if ($title_add_post == '' || $slug_add_post == '') {
 		$('#formAddPost .alert').removeClass('hidden');
-		$('#formAddPost .alert').html('Vui lòng điền đầy đủ thông tin.');
+		$('#formAddPost .alert').html('please fil in all information.');
 	} else {
 		$.ajax({
 			url : $_DOMAIN + 'posts.php',
@@ -605,7 +605,7 @@ $('#formEditPost button').on('click', function() {
 	if ($stt_edit_post == '' || $title_edit_post == '' || $slug_edit_post == '' || $cate_1_edit_post == '' || $cate_2_edit_post == '' || $cate_3_edit_post == '' || $body_edit_post == '') 
 	{
 		$('#formEditPost .alert').removeClass('hidden');
-		$('#formEditPost .alert').html('Vui lòng điền đầy đủ thông tin.');
+		$('#formEditPost .alert').html('please fil in all information.');
 	} 
 	else
 	{
@@ -630,7 +630,7 @@ $('#formEditPost button').on('click', function() {
 				$('#formEditPost .alert').html(data);
 			}, error : function() {
 				$('#formEditPost .alert').removeClass('hidden');
-				$('#formEditPost .alert').html('Đã có lỗi xảy ra, hãy thử lại sau.');
+				$('#formEditPost .alert').html('something wrong, try it later.');
 			}
 		});
 	}
@@ -780,7 +780,7 @@ $('#formAddAcc button').on('click', function() {
 	if ($un_add_acc == '' || $pw_add_acc == '' || $repw_add_acc == '')
 	{
 		$('#formAddAcc .alert').removeClass('hidden');
-		$('#formAddAcc .alert').html('Vui lòng điền đầy đủ thông tin.');
+		$('#formAddAcc .alert').html('please fil in all information.');
 	}
 	else
 	{
@@ -994,13 +994,13 @@ $('.del-acc-list').on('click', function() {
 // Xem ảnh avatar trước
 function preUpAvt() {
     img_avt = $('#img_avt').val();
-    $('#formUpAvt .box-pre-img').html('<p><strong>Ảnh xem trước</strong></p>');
+    $('#formUpAvt .box-pre-img').html('<p><strong>image</strong></p>');
     $('#formUpAvt .box-pre-img').removeClass('hidden');
  
     // Nếu đã chọn ảnh
     if (img_avt != '')
     {
-        $('#formUpAvt .box-pre-img').html('<p><strong>Ảnh xem trước</strong></p>');
+        $('#formUpAvt .box-pre-img').html('<p><strong>image</strong></p>');
         $('#formUpAvt .box-pre-img').removeClass('hidden');
 		$('#formUpAvt .box-pre-img').append('<img src="' + URL.createObjectURL(event.target.files[0]) + '" style="border: 1px solid #ddd; width: 50px; height: 50px; margin-right: 5px; margin-bottom: 5px;"/>');
     } 
@@ -1015,7 +1015,7 @@ function preUpAvt() {
 // Upload ảnh đại diện
 $('#formUpAvt').submit(function(e) {
     img_avt = $('#img_avt').val();
-    $('#formUpAvt button[type=submit]').html('Đang tải ...');
+    $('#formUpAvt button[type=submit]').html('loading ...');
  
     // Nếu có chọn ảnh
     if (img_avt) {
@@ -1027,12 +1027,12 @@ $('#formUpAvt').submit(function(e) {
         if (size_img_avt > 5242880) { // 5242880 byte = 5MB 
             $('#formUpAvt button[type=submit]').html('Upload');
             $('#formUpAvt .alert-danger').removeClass('hidden');
-            $('#formUpAvt .alert-danger').html('Tệp đã chọn có dung lượng lớn hơn mức cho phép.');
+            $('#formUpAvt .alert-danger').html('this file is too big.');
         // Nếu lỗi về định dạng ảnh
         } else if (type_img_avt != 'image/jpeg' && type_img_avt != 'image/png' && type_img_avt != 'image/gif') {
             $('#formUpAvt button[type=submit]').html('Upload');
             $('#formUpAvt .alert-danger').removeClass('hidden');
-            $('#formUpAvt .alert-danger').html('File ảnh không đúng định dạng cho phép.');
+            $('#formUpAvt .alert-danger').html('this image is wrong fomat.');
         } else {
             $(this).ajaxSubmit({ 
                 beforeSubmit: function() {
@@ -1062,13 +1062,13 @@ $('#formUpAvt').submit(function(e) {
     } else {
         $('#formUpAvt button[type=submit]').html('Upload');
         $('#formUpAvt .alert-danger').removeClass('hidden');
-        $('#formUpAvt .alert-danger').html('Vui lòng chọn tệp hình ảnh.');
+        $('#formUpAvt .alert-danger').html('please choose image.');
     }
 });
 
 // Xoá ảnh đại diện
 $('#del_avt').on('click', function() {
-	$confirm = confirm('Bạn có chắc chắn muốn xoá ảnh đại diện này không?');
+	$confirm = confirm('Are you sure to delete this image?');
 	if ($confirm == true)
 	{
 		$.ajax({
@@ -1079,7 +1079,7 @@ $('#del_avt').on('click', function() {
 			}, success : function() {
 				location.reload();
 			}, error : function() {
-				alert('Đã có lỗi xảy ra, vui lòng thử lại.');
+				alert('Something wrong, try it later.');
 			}
 		});
 	}
@@ -1090,7 +1090,7 @@ $('#del_avt').on('click', function() {
 
 // Cập nhật thông tin khác
 $('#formUpdateInfo button').on('click', function() {
-	$('#formUpdateInfo button').html('Đang tải ...');
+	$('#formUpdateInfo button').html('loading ...');
 	$dn_update = $('#dn_update').val();
 	$email_update = $('#email_update').val();
 	$fb_update = $('#fb_update').val();
@@ -1117,19 +1117,19 @@ $('#formUpdateInfo button').on('click', function() {
 				$('#formUpdateInfo .alert').html(data);
 			}, error : function() {
 				$('#formUpdateInfo .alert').removeClass('hidden');
-				$('#formUpdateInfo .alert').html('Đã có lỗi xảy ra, vui lòng thử lại.');
+				$('#formUpdateInfo .alert').html('Something wrong, try it later.');
 			}
 		});
-		$('#formUpdateInfo button').html('Lưu thay đổi');
+		$('#formUpdateInfo button').html('Save change');
 	} else {
-		$('#formUpdateInfo button').html('Lưu thay đổi');
+		$('#formUpdateInfo button').html('Save change');
         $('#formUpdateInfo .alert').removeClass('hidden');
-        $('#formUpdateInfo .alert').html('Vui lòng điền đầy đủ thông tin.');
+        $('#formUpdateInfo .alert').html('please fil in all information.');
 	}
 });
 
 $('#formChangePw button').on('click', function() {
-	$('#formChangePw button').html('Đang tải ...');	
+	$('#formChangePw button').html('loading ...');	
 	$old_pw_change = $('#old_pw_change').val();
 	$new_pw_change = $('#new_pw_change').val();
 	$re_new_pw_change = $('#re_new_pw_change').val();
@@ -1148,13 +1148,13 @@ $('#formChangePw button').on('click', function() {
         		$('#formChangePw .alert').html(data);
 			}, error : function() {
 				$('#formChangePw .alert').removeClass('hidden');
-        		$('#formChangePw .alert').html('Đã có lỗi xảy ra, vui lòng thủ lại.');
+        		$('#formChangePw .alert').html('Something wrong, try it later.');
 			}
 		});
-		$('#formChangePw button').html('Lưu thay đổi');
+		$('#formChangePw button').html('Save change');
 	} else {
-		$('#formChangePw button').html('Lưu thay đổi');
+		$('#formChangePw button').html('Save change');
         $('#formChangePw .alert').removeClass('hidden');
-        $('#formChangePw .alert').html('Vui lòng điền đầy đủ thông tin.');
+        $('#formChangePw .alert').html('please fil in all information.');
 	}
 });

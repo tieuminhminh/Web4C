@@ -19,7 +19,7 @@
       $page = 1;
     }
 
-    $limit = 20; // Giới hạn số bài viết hiển thị trong 1 trang
+    $limit = 8; // Giới hạn số bài viết hiển thị trong 1 trang
     $totalPage = ceil($countPost / $limit); // Tổng số trang sau khi tính toán
         
     // Validate tham số page    
