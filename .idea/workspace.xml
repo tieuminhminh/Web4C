@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf0b99a3-c0cb-4ef6-a7c8-092f1edbcf55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/classes/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/classes/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/Redirect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/core/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/core/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/signin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/._present" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._fonts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/._sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/css/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/css/._animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/css/._bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/css/._bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/css/._icomoon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/css/._style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/css/._style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/._bootstrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/._icomoon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/bootstrap/._glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/bootstrap/._glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/bootstrap/._glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/bootstrap/._glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/bootstrap/._glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/._icomoon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/._icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/._icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/._icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/._icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/._Read Me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/._demo-files" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/._demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/._fonts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/._selection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/._style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/demo-files/._demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/demo-files/._demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/fonts/._icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/fonts/._icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/fonts/._icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/fonts/icomoon/icomoon/fonts/._icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_large_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_large_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._img_large_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/images/._person.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/js/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/js/._bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/js/._jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/js/._main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/js/._modernizr-2.6.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/js/._respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/.__bootstrap-compass.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/.__bootstrap-mincer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/.__bootstrap-sprockets.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/._bootstrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/._bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/._style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__badges.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__breadcrumbs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__button-groups.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__component-animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__dropdowns.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__glyphicons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__input-groups.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__modals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__navs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__pager.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__panels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__popovers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__progress-bars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__responsive-embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__responsive-utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__scaffolding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__thumbnails.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/.__wells.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/._mixins" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__center-block.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__hide-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__nav-vertical-align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__opacity.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__panels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__progress-bar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__reset-filter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__responsive-visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__tab-focus.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__text-overflow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__MACOSX/present/sass/bootstrap/mixins/.__vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/css/icomoon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/bootstrap/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/bootstrap/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/bootstrap/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/bootstrap/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/bootstrap/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/Read Me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/demo-files/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/demo-files/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/fonts/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/fonts/icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/fonts/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/fonts/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/selection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/fonts/icomoon/icomoon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_large_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_large_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/img_large_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/images/person.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/js/jquery.masonry.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/js/modernizr-2.6.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/js/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/_bootstrap-compass.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/_bootstrap-mincer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/_bootstrap-sprockets.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_badges.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_breadcrumbs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_button-groups.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_component-animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_dropdowns.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_glyphicons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_input-groups.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_modals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_navs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_pager.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_panels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_popovers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_progress-bars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_responsive-embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_responsive-utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_scaffolding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_thumbnails.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/_wells.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_center-block.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_hide-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_nav-vertical-align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_opacity.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_panels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_progress-bar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_reset-filter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_responsive-visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_tab-focus.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_text-overflow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/bootstrap/mixins/_vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/sass/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/present/work.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signUp/process.php" beforeDir="false" afterPath="$PROJECT_DIR$/signUp/process.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signUp/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/signUp/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/latest-news.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/latest-news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shutdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shutdown.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="ProjectId" id="1iwXFXn7qBKW6OG1Z7C2swkrhcl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf0b99a3-c0cb-4ef6-a7c8-092f1edbcf55" name="Default Changelist" comment="" />
+      <created>1602819525018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602819525018</updated>
+      <workItem from="1602819526060" duration="1060000" />
+      <workItem from="1602821695349" duration="3487000" />
+      <workItem from="1602831751271" duration="4194000" />
+      <workItem from="1602835956676" duration="3206000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="356" y="173" width="824" height="691" key="#CLI_Interpreters" timestamp="1602831709224">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="356" y="173" width="824" height="691" key="#CLI_Interpreters/48.27.1872.1053@48.27.1872.1053" timestamp="1602831709224" />
+    <state x="280" y="406" width="1397" height="301" key="#SQL_Dialects" timestamp="1602831902549">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="280" y="406" width="1397" height="301" key="#SQL_Dialects/48.27.1872.1053@48.27.1872.1053" timestamp="1602831902549" />
+    <state x="898" y="396" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602833739241">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="898" y="396" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/48.27.1872.1053@48.27.1872.1053" timestamp="1602833739241" />
+    <state x="48" y="27" width="877" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602836116931">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="48" y="27" width="877" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/48.27.1872.1053@48.27.1872.1053" timestamp="1602836116931" />
+    <state x="786" y="273" width="386" height="568" key="NewPhpClassDialog" timestamp="1602830735070">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="786" y="273" width="386" height="568" key="NewPhpClassDialog/48.27.1872.1053@48.27.1872.1053" timestamp="1602830735070" />
+    <state x="739" y="237" width="480" height="640" key="RollbackChangesDialog" timestamp="1602835925584">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="739" y="237" width="480" height="640" key="RollbackChangesDialog/48.27.1872.1053@48.27.1872.1053" timestamp="1602835925584" />
+    <state x="262" y="147" width="1022" height="737" key="SettingsEditor" timestamp="1602831731594">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="262" y="147" width="1022" height="737" key="SettingsEditor/48.27.1872.1053@48.27.1872.1053" timestamp="1602831731594" />
+    <state x="388" y="187" width="1224" height="781" key="find.popup" timestamp="1602838275237">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="388" y="187" width="1224" height="781" key="find.popup/48.27.1872.1053@48.27.1872.1053" timestamp="1602838275237" />
+    <state x="647" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1602836786360">
+      <screen x="48" y="27" width="1872" height="1053" />
+    </state>
+    <state x="647" y="259" width="672" height="678" key="search.everywhere.popup/48.27.1872.1053@48.27.1872.1053" timestamp="1602836786360" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/index.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -17,4 +17,3 @@ require 'templates/content.php';
 
 // Footer
 require 'includes/footer.php';
-?>

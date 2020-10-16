@@ -1,17 +1,17 @@
 <?php
 
 // Require các thư viện PHP
-require_once 'classes/DB.php';
-require_once 'classes/Session.php';
-require_once 'classes/Functions.php';
+require_once '../classes/Database.php';
+require_once '../classes/Session.php';
+require_once '../classes/Redirect.php';
 
 // Kết nối database
-$db = new DB();
+$db = new Database();
 $db->connect();
 $db->set_char('utf8');
 
 // Thông tin chung
-$_DOMAIN = 'http://localhost/blogWebsite/admin/';
+$_DOMAIN = 'http://web.net:8080/admin/';
 
 date_default_timezone_set('Asia/Ho_Chi_Minh'); 
 $date_current = '';
@@ -41,5 +41,3 @@ if ($user)
 		$data_user = $db->fetch_assoc($sql_get_data_user, 1);
 	}
 }
-
-?>

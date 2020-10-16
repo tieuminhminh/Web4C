@@ -1,4 +1,4 @@
-$_DOMAIN = 'http://localhost/blogWebsite/admin/';
+$_DOMAIN = 'http://web.net:8080/admin/';
 
 // Login
 $('#formSignin button').on('click', function() {

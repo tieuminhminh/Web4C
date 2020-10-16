@@ -12,7 +12,7 @@
 				
 				
 				
-				<a href="http://localhost/blogWebsite/"> Traveling blogs </a>
+				<a href="http://web.net:8080/"> Traveling blogs </a>
 	<form class="form-horizontal" action="process.php" method="post">
 		
 				

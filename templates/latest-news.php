@@ -38,7 +38,7 @@
 				<div class="col-md-3">
                     <div class="thumbnail">
                         <a href="' . $_DOMAIN . $data_post['slug'] . '-' . $data_post['id_post'] . '.html">
-                            <img src="' . $data_post['url_thumb'] . '">
+                            <img src="' .'../upload/2019/05/06/'. $data_post['url_thumb'] . '">
                         </a>
                         <div class="caption">
                             <h3><a href="' . $_DOMAIN . $data_post['slug'] . '-' . $data_post['id_post'] . '.html">' . $data_post['title'] . '</a></h3>

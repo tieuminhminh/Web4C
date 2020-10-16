@@ -45,14 +45,15 @@ if (isset($_GET['sp']) && isset($_GET['id'])) {
 		<meta charset="UTF-8">
 		<title><?php echo $title; ?></title>
 		<!-- ... -->
-
-		<link rel="stylesheet" href="<?php echo $_DOMAIN; ?>admin/bootstrap/css/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+		<link rel="stylesheet" href="../admin/bootstrap/css/bootstrap.min.css">
+        <link href="../admin/bootstrap/css/custom.css" rel="stylesheet">
 		
 	</head>
 	<body>
-
-
-
 		<nav class="navbar navbar-default" role="navigation">
 		  	<div class="container-fluid">
 		    	<div class="navbar-header">
@@ -102,10 +103,10 @@ if (isset($_GET['sp']) && isset($_GET['id'])) {
 			      		<li data-toggle="modal" data-target="#boxSearch"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 			      	</ul>
 					<ul class="nav navbar-nav navbar-right">
-			      		<li ><a href="http://localhost/blogWebsite/admin/">Sign In</a></li>
+			      		<li ><a href="http://web.net:8080/admin/">Sign In</a></li>
 			      	</ul>
 					  <ul class="nav navbar-nav navbar-right">
-			      		<li ><a href="http://localhost/blogWebsite/signUp/register.php">Register</a></li>
+			      		<li ><a href="http://web.net:8080/signUp/register.php">Register</a></li>
 			      	</ul>
 			    </div>
 		  	</div>

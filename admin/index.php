@@ -24,5 +24,3 @@ else
 
 // Require footer
 require_once 'includes/footer.php';
-
-?>

@@ -4,7 +4,7 @@ Order Allow,Deny
 Deny from all
 </Files>
 
-ErrorDocument 404 http://localhost/newspage/404.php
+ErrorDocument 404 http://web.net:8080/404.php
 
 # Rewrite url
 RewriteEngine on

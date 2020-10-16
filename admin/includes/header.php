@@ -10,7 +10,7 @@
 	
 	<!-- Liên kết thư viện jQuery -->
 	<script src="<?php echo $_DOMAIN; ?>js/jquery.min.js"></script>	   
-	<a href = "http://localhost/blogWebsite/">Back to Home page</a> 
+	<a href = "http://web.net:8080/">Back to Home page</a>
 </head>
 <body>
 

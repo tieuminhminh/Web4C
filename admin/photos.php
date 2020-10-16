@@ -20,28 +20,17 @@ if ($user)
 			$month_current = substr($date_current, 5, 2);
 			$year_current = substr($date_current, 0, 4);
 
-			// Tạo folder năm hiện tại
+			// Tạo folder theo ngày tháng năm hiện tại
 		    if (!is_dir($dir.$year_current))
 		    {
     			mkdir($dir.$year_current.'/');
-			} 
-
-			// Tạo folder tháng hiện tại
-			if (!is_dir($dir.$year_current.'/'.$month_current))
-    		{
-    			mkdir($dir.$year_current.'/'.$month_current.'/');
-    		}	
-
-    		// Tạo folder ngày hiện tại
-    		if (!is_dir($dir.$year_current.'/'.$month_current.'/'.$day_current))
-	    	{
-	    		mkdir($dir.$year_current.'/'.$month_current.'/'.$day_current.'/');
-	    	}
+			}
 
 		    $path_img = $dir.$year_current.'/'.$month_current.'/'.$day_current.'/'.$name_img; // Đường dẫn thư mục chứa file
 		    move_uploaded_file($source_img, $path_img); // Upload file
 			try{
-		   	$type_img = array_pop(str_split("\.", $name_img)); // Loại file
+			    $arr = str_split("\.", $name_img);
+		   	$type_img = array_pop($arr); // Loại file
 			}  catch(Exception $e){
 				echo $e;
 			};

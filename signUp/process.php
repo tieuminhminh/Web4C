@@ -6,10 +6,10 @@
     }
      
     //Nhúng file kết nối với database
-    require_once '../admin/classes/DB.php';
+    require_once '../admin/classes/Database.php';
 
     // Kết nối database
-$db = new DB();
+$db = new Database();
 $db->connect();
 $db->set_char('utf8');
           
@@ -48,7 +48,7 @@ $db->set_char('utf8');
     //Thông báo quá trình lưu
     $sql = "SELECT username FROM accounts WHERE username='$username'";
     if ($db->num_rows($sql) > 0)
-        echo "Register successful! <a href='http://localhost/blogWebsite/'>Travling Blog</a>";
+        echo "Register successful! <a href='http://web.net:8080/'>Travling Blog</a>";
     else
         echo "Registration Error! <a href='register.php'>Try again</a>";
 ?>
